@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionScriptProperties mainApplicationPath="talleresCompania.mxml" version="3">
+<compiler additionalCompilerArguments="-locale en_US" copyDependentFiles="true" enableModuleDebug="true" generateAccessible="true" htmlExpressInstall="true" htmlGenerate="true" htmlHistoryManagement="true" htmlPlayerVersion="10.0.0" htmlPlayerVersionCheck="true" outputFolderPath="bin-debug" sourceFolderPath="src" strict="true" useApolloConfig="false" verifyDigests="true" warn="true">
+<compilerSourcePath/>
+<libraryPath defaultLinkType="1">
+<libraryPathEntry kind="4" path=""/>
+<libraryPathEntry kind="1" linkType="1" path="libs"/>
+</libraryPath>
+<sourceAttachmentPath/>
+</compiler>
+<applications>
+<application path="talleresCompania.mxml"/>
+</applications>
+<modules>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Factura/modFacturaOpciones.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Factura/modFacturaOpciones.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Reportes/modRepGeneral.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Reportes/modRepGeneral.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Reportes/Filtros/modFiltroPromEtapas.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Reportes/Filtros/modFiltroPromEtapas.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/modNotificarComentario.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/modNotificarComentario.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/modListaTareas.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/modListaTareas.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Documentos/modUpDocumentos.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Documentos/modUpDocumentos.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Documentos/modImagenes.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Documentos/modImagenes.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Factura/modFacturaEdit.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Factura/modFacturaEdit.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/modOpciones.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/modOpciones.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Reportes/modRepObservaciones.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Reportes/modRepObservaciones.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Documentos/modListaDocumentos.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Documentos/modListaDocumentos.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Documentos/Componentes/VisorImagenes/modSinImagenes.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Documentos/Componentes/VisorImagenes/modSinImagenes.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Reportes/modRepRanking20.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Reportes/modRepRanking20.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Documentos/Componentes/VisorImagenes/modLoadImage.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Documentos/Componentes/VisorImagenes/modLoadImage.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Reportes/modGeneradorRep.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Reportes/modGeneradorRep.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Reportes/modRepRanking.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Reportes/modRepRanking.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Documentos/modNotificarDocumento.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Documentos/modNotificarDocumento.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Documentos/Componentes/VisorImagenes/modImageView.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Documentos/Componentes/VisorImagenes/modImageView.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Reportes/modRepGestionTaller.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Reportes/modRepGestionTaller.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Factura/modFacturaInfo.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Factura/modFacturaInfo.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/modBitacoraMail.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/modBitacoraMail.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/modDetalleAgenda.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/modDetalleAgenda.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Documentos/modUpDocumentosSolicitud.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Documentos/modUpDocumentosSolicitud.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Reportes/modRepPromedio.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Reportes/modRepPromedio.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Documentos/modSolicitudes.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Documentos/modSolicitudes.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/modTareas.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/modTareas.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Reportes/modRepEtapasPromedioMes.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Reportes/modRepEtapasPromedioMes.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Reportes/Filtros/modFiltroAll.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Reportes/Filtros/modFiltroAll.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Documentos/modGeneral.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Documentos/modGeneral.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Factura/modFacturaPrincipal.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Factura/modFacturaPrincipal.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/modDerechoMain.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/modDerechoMain.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Agenda/modAgenda.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Agenda/modAgenda.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Reportes/Filtros/modFiltroFechas.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Reportes/Filtros/modFiltroFechas.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Reportes/modRepCambioFecha.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Reportes/modRepCambioFecha.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/modDatosContacto.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/modDatosContacto.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/modBitacora.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/modBitacora.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Liquidador/Modulos/modLiquidador.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Liquidador/Modulos/modLiquidador.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/modLogin.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/modLogin.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/modPrincipal.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/modPrincipal.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Componentes/HtmlPopUp.swf" optimize="true" sourcePath="src/talleresCompania2010/Componentes/HtmlPopUp.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Liquidador/modLiquidadorPrincipal.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Liquidador/modLiquidadorPrincipal.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Factura/modFacturaInterfaz.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Factura/modFacturaInterfaz.mxml"/>
+<module application="src/talleresCompania.mxml" destPath="talleresCompania2010/Modulos/Reportes/modRepPromNotificaciones.swf" optimize="true" sourcePath="src/talleresCompania2010/Modulos/Reportes/modRepPromNotificaciones.mxml"/>
+</modules>
+<buildCSSFiles/>
+</actionScriptProperties>

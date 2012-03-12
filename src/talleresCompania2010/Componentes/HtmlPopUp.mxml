@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:controls="talleresCompania2010.Componentes.Controls.*" 
+	showCloseButton="true" title="{windowTitle}"
+	layout="absolute" close="closeall();"
+	width="{frameWidth+20}" height="{frameHeight+38}"  
+	move="ifr.moveIFrame()" render="ifr.moveIFrame()" 
+	initialize="initApp()" click="setearFoco()"
+	verticalScrollPolicy="off" horizontalScrollPolicy="off">
+	<mx:Script>
+		<![CDATA[
+			import mx.core.Application;
+			import mx.managers.PopUpManager;
+			
+			[Bindable]public var src:String; 			//the source url
+			[Bindable]public var frameWidth:Number; 	//width of the iframe
+			[Bindable]public var frameHeight:Number; 	//height of the iframe
+			[Bindable]public var windowTitle:String; 	//title of the window
+			
+			public function closeall():void
+			{				
+				PopUpManager.removePopUp(this);
+				ifr.visible = false;
+			}
+			
+			public function setearFoco():void
+			{	
+				this.setFocus();
+			}
+			
+			private function initApp():void
+			{
+				this.addEventListener(KeyboardEvent.KEY_DOWN, cerrarDialog);
+				this.parentApplication.addEventListener(KeyboardEvent.KEY_DOWN, cerrarDialog);
+				this.setFocus();
+			}
+			
+			private function cerrarDialog(event:KeyboardEvent):void{
+				if (event.keyCode == 27){
+					closeall();
+				} 
+			}
+		]]>
+	</mx:Script>
+
+	<!-- leave the viewstack here -->
+	<mx:ViewStack> 
+		<controls:iFrame id="ifr" source="{src}" width="{frameWidth}" height="{frameHeight}" />
+	</mx:ViewStack>		
+	
+</mx:TitleWindow>

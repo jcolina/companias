@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
+	width="200" height="176" 
+	layout="absolute" cornerRadius="8" 
+	alpha="1.0" backgroundAlpha="1.0"
+	showCloseButton="false" borderStyle="inset" 
+	borderColor="#2170E5"
+	initialize="initCom()">
+	
+	<mx:Style source="Css/styleFechaGrafico.css"/>
+	<mx:Script source="libComFechaGrafico.as"/>
+	
+		<mx:Grid x="8" y="33" width="165">
+			<mx:GridRow height="100%" styleName="grdFilas">
+				<mx:GridItem height="18" styleName="grdMeses">
+					<mx:Button id="btnEnero" click="enviarData(event)" label="{IdiomaApp.getText('general_ene_cal')}"  height="18" styleName="btnMesCalendar" />
+				</mx:GridItem>
+				<mx:GridItem height="18" styleName="grdMeses">
+					<mx:Button id="btnFebrero" click="enviarData(event)" label="{IdiomaApp.getText('general_feb_cal')}" height="18" styleName="btnMesCalendar"/>
+				</mx:GridItem>
+				<mx:GridItem height="18" styleName="grdMeses">
+					<mx:Button id="btnMarzo" click="enviarData(event)" label="{IdiomaApp.getText('general_mar_cal')}" height="18" styleName="btnMesCalendar"/>
+				</mx:GridItem>
+			</mx:GridRow>
+			<mx:GridRow height="100%" styleName="grdFilas">
+				<mx:GridItem height="18" styleName="grdMeses">
+					<mx:Button id="btnAbril" click="enviarData(event)" label="{IdiomaApp.getText('general_abr_cal')}" height="18" styleName="btnMesCalendar"/>
+				</mx:GridItem>
+				<mx:GridItem height="18" styleName="grdMeses">
+					<mx:Button id="btnMayo" click="enviarData(event)" label="{IdiomaApp.getText('general_may_cal')}" height="18" styleName="btnMesCalendar"/>
+				</mx:GridItem>
+				<mx:GridItem height="18" styleName="grdMeses">
+					<mx:Button id="btnJunio" click="enviarData(event)" label="{IdiomaApp.getText('general_jun_cal')}" height="18" styleName="btnMesCalendar"/>
+				</mx:GridItem>
+			</mx:GridRow>
+			<mx:GridRow height="100%" styleName="grdFilas">
+				<mx:GridItem height="18" styleName="grdMeses">
+					<mx:Button id="btnJulio" click="enviarData(event)" label="{IdiomaApp.getText('general_jul_cal')}" height="18" styleName="btnMesCalendar"/>
+				</mx:GridItem>
+				<mx:GridItem height="18" styleName="grdMeses">
+					<mx:Button id="btnAgosto" click="enviarData(event)" label="{IdiomaApp.getText('general_ago_cal')}" height="18" styleName="btnMesCalendar"/>
+				</mx:GridItem>
+				<mx:GridItem height="18" styleName="grdMeses">
+					<mx:Button id="btnSeptiembre" click="enviarData(event)" label="{IdiomaApp.getText('general_sep_cal')}" height="18" styleName="btnMesCalendar"/>
+				</mx:GridItem>
+			</mx:GridRow>
+			<mx:GridRow height="100%" styleName="grdFilas">
+				<mx:GridItem height="18" styleName="grdMeses">
+					<mx:Button id="btnOctubre" click="enviarData(event)" label="{IdiomaApp.getText('general_oct_cal')}" height="18" styleName="btnMesCalendar"/>
+				</mx:GridItem>
+				<mx:GridItem height="18" styleName="grdMeses">
+					<mx:Button id="btnNoviembre" click="enviarData(event)" label="{IdiomaApp.getText('general_nov_cal')}" height="18" styleName="btnMesCalendar"/>
+				</mx:GridItem>
+				<mx:GridItem height="18" styleName="grdMeses">
+					<mx:Button id="btnDiciembre" click="enviarData(event)" label="{IdiomaApp.getText('general_dic_cal')}" height="18" styleName="btnMesCalendar"/>
+				</mx:GridItem>
+			</mx:GridRow>
+		</mx:Grid>
+		<mx:Button width="34" height="23" x="22" y="3" id="btnAtras" click="lastYear()"/>
+		<mx:Label x="70" y="1" text="2011" fontSize="15" fontWeight="bold" id="lblAnio"/>
+		<mx:Button width="34" height="23" x="130" y="3" id="btnSiguiente" click="nextYear()"/>
+	
+</mx:TitleWindow>

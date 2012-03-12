@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="100%" height="100%">
+	<mx:Script source="libModDerechoMain.as" />
+	
+	<mx:Accordion  id="accDerechoMain" width="100%" height="100%" selectedIndex="0" creationPolicy="all">
+		<mx:Canvas label="{IdiomaApp.getText('mod_derecho_main_info')}" width="100%" height="100%">
+			<mx:ModuleLoader id="mlTareas" styleName="ModuleDerechoMain" url="talleresCompania2010/Modulos/modTareas.swf"  width="100%" height="100%"/>	
+		</mx:Canvas>
+		<mx:Canvas label="{IdiomaApp.getText('mod_derecho_main_docu')}" width="100%" height="100%">
+			<mx:ModuleLoader id="mlDocumentos" styleName="ModuleDerechoMain" url="talleresCompania2010/Modulos/Documentos/modGeneral.swf"  width="100%" height="100%"/>
+		</mx:Canvas>
+	</mx:Accordion>		
+</mx:Module>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml"
+	horizontalScrollPolicy="off" verticalScrollPolicy="off">
+	<mx:HBox>
+		<!-- <mx:Image source="assets/factura.png" /> -->
+		<mx:Image source="@Embed(source='../../../../assets/factura.png')" />
+		<mx:Label fontWeight="bold" text="{data.Numero}"/>
+	</mx:HBox>	
+</mx:Canvas>

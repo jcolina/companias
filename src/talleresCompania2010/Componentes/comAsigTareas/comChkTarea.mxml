@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml">
+
+<mx:Script>
+	<![CDATA[
+		public var selected:Boolean;
+		
+		private function onChange(event:Event):void {
+			this.selected = event.currentTarget.selected;
+		}
+	]]>
+</mx:Script>
+
+	<mx:CheckBox id="chkTarea" label="{data.Nombre}" paddingLeft="10" change="onChange(event)"
+		selected="{data.selected}"/>
+	
+</mx:HBox>

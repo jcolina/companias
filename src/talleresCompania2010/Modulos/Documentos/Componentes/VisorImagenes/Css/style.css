@@ -1,0 +1,32 @@
+/* CSS file */
+
+Canvas.ImageContainer {
+	cornerRadius: 15;
+	borderStyle: "solid";
+	borderColor: #5fbccd;
+	borderThickness: 2;
+	backgroundColor: #5fbccd;
+	dropShadowColor: #000000;
+	dropShadowEnabled: true;
+}
+
+Canvas.SuperiorContainer {
+	cornerRadius: 10;
+	backgroundColor: #FFFFFF;
+	borderStyle: "solid";
+}
+
+Canvas.InferiorContainer {
+	cornerRadius: 2;
+	backgroundColor: #FFFFFF;
+	borderStyle: "solid";
+	borderColor: #FFFFFF;
+	borderThickness: 1;
+}
+
+Canvas.SmallImageContainer {
+	cornerRadius: 1;
+	borderStyle: "solid";
+	borderColor: #adecfa;
+	borderThickness: 2;
+}

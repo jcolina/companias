@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+	width="100%" height="100%"
+	initialize="initMod()">
+	
+	<mx:Script source="libModFacturaPrincipal.as"/>
+	
+	<mx:AdvancedDataGrid x="0" y="0"
+		id="adgFactura" designViewDataType="tree"
+		width="100%" height="100%"
+		itemClick="onClickGrid(event)">
+		<mx:columns>
+			<mx:AdvancedDataGridColumn id="columCheck" width="30" visible="false" headerText="" dataField="Seleccion" itemRenderer="talleresCompania2010.Modulos.Factura.Componentes.comCheckFacturas"/>
+			<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('mod_factura_principal_total_factura')}" dataField="IDVehiculo" visible="false"/>
+			<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('general_patente')}" dataField="Patente"/>
+			<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('general_siniestro')}" dataField="Siniestro"/>
+			<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('Liquidador')}" dataField="Liquidador"/>
+			<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('general_compania')}" dataField="Cia" visible="false"/>
+			<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('general_fecha_ingreso')}" dataField="FecIng"/>
+			<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('general_fecha_entrega')}" dataField="FecEnt"/>
+			<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('mod_factura_principal_total_factura')}" dataField="Factura"/>
+		</mx:columns>
+	</mx:AdvancedDataGrid>
+</mx:Module>

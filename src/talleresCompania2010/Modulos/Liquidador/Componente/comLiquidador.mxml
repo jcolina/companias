@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
+	x="54" y="50" 
+	layout="absolute" title="{IdiomaApp.getText('Liquidador')}" 
+	initialize="initCom()" showCloseButton="true" 
+	close="CierraPop()" width="400" height="326" xmlns:Rut="talleresCompania2010.util.myValidators.*" xmlns:events="flash.events.*">
+	<mx:Script>
+		<![CDATA[
+			import mx.core.Application;
+		]]>
+	</mx:Script>
+	<mx:Script source="libComLiquidador.as"/>
+	<mx:StringValidator id="vlNombre" required="true" requiredFieldError="{IdiomaApp.getText('com_liquidador_tool_ingresa_nombre')}"
+			source="{txNombre}" property="text" />
+	<mx:StringValidator id="vlApellido" required="true" requiredFieldError="{IdiomaApp.getText('com_liquidador_tool_ingresa_apellido')}"
+			source="{txApellido}" property="text" />	
+	<mx:StringValidator id="vlCelular" required="true" requiredFieldError="{IdiomaApp.getText('com_liquidador_tool_ingresa_celular')}"
+			source="{txCelular}" property="text" />	
+			
+	<mx:EmailValidator id="vlEmail" required="true" requiredFieldError="{IdiomaApp.getText('com_liquidador_tool_ingresa_mail')}"
+			source="{txEmail}" property="text" invalidCharError="{IdiomaApp.getText('com_liquidador_val_caracter')}" 
+			invalidDomainError= "{IdiomaApp.getText('com_liquidador_val_dom')}" missingAtSignError="{IdiomaApp.getText('com_liquidador_val_arroba')}" 
+			missingPeriodInDomainError="{IdiomaApp.getText('com_liquidador_val_nombre_dom')}" />	
+	<Rut:ValidarRut source="{txRut}" invalidCharError="{IdiomaApp.getText('com_liquidador_val_car_inva')}" invalidIDCLError="{IdiomaApp.getText('com_liquidador_val_rut_inva')}"
+		format="true" property="text" required="true" requiredFieldError="{IdiomaApp.getText('com_liquidador_rut_debe')}" id="vlRut"/>		
+			
+	<mx:HTTPService id="ServiceMod" method="POST" requestTimeout="500" showBusyCursor="true"/>
+
+	<mx:Form width="100%" height="200">
+			<mx:FormItem label="{IdiomaApp.getText('com_liquidador_rut_liquidador')}">
+				<mx:TextInput id="txRut" name="" width="190" maxChars="50" />
+			</mx:FormItem>
+			<mx:FormItem label="{IdiomaApp.getText('com_liquidador_nombre_liquidador')}">
+				<mx:TextInput id="txNombre" name="" width="190" maxChars="50"/>
+			</mx:FormItem>
+			<mx:FormItem label="{IdiomaApp.getText('com_liquidador_apellido_liquidador')}">
+				<mx:TextInput id="txApellido" name="" width="190" maxChars="50"/>
+			</mx:FormItem>
+			<mx:FormItem label="{IdiomaApp.getText('com_liquidador_celular_liquidador')}">
+				<mx:TextInput id="txCelular"  name="" width="190" maxChars="20"/>
+			</mx:FormItem>
+			<mx:FormItem label="{IdiomaApp.getText('com_liquidador_email_liquidador')}">
+				<mx:TextInput id="txEmail" name="" width="190" maxChars="50"/>
+			</mx:FormItem>
+			<mx:FormItem label="{IdiomaApp.getText('com_liquidador_fono_liquidador')}">
+				<mx:TextInput id="txFono" restrict="0-9" name="" width="190" maxChars="20"/>
+			</mx:FormItem>
+	</mx:Form>
+	<mx:Button x="10" y="217"  label="{IdiomaApp.getText('com_liquidador_agrega_liquidador')}" id="BtnAgregaLiquidador" click="ingresaLiquidador(event)"/>
+	<mx:Button x="153" y="217" label="{IdiomaApp.getText('com_liquidador_modificar_liquidador')}" id="BtnModificaLiquidador" click="modificaLiquidador(event)"/>
+	<mx:Button x="301" y="217" label="{IdiomaApp.getText('com_liquidador_cerrar_liquidador')}" id="BtnCerrar" click="CierraPop()"/>
+
+
+
+</mx:TitleWindow>	

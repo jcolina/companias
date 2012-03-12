@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+	width="100%" height="100%" horizontalScrollPolicy="off">
+	<mx:Script>
+		<![CDATA[
+			import talleresCompania2010.util.IdiomaApp;
+		]]>
+	</mx:Script>
+	<mx:Accordion width="100%" height="100%" selectedIndex="0" id="accDerechoMain">
+		<mx:Canvas label="{IdiomaApp.getText('mod_facturas_interfaz_fact')}" width="100%" height="100%" >
+			<mx:ModuleLoader id="mlFactura" horizontalScrollPolicy="off" styleName="ModuleDerechoMain" width="100%" height="100%" url="talleresCompania2010/Modulos/Factura/modFacturaInfo.swf"/>
+		</mx:Canvas>
+	</mx:Accordion>
+</mx:Module>

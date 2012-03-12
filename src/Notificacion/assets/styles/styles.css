@@ -1,0 +1,50 @@
+﻿Notification
+{
+	titleStyleName: myTitleStyle;
+	messageStyleName: myMessageStyle;
+	backgroundStyleName: notificationBackground;
+	closeButtonIcon: Embed('Notificacion/assets/overClose.png');
+	paddingTop: 5;
+	paddingBottom: 5;
+	paddingLeft: 5;
+	paddingRight: 5;
+	horizontalGap: 10;
+	verticalGap: 10;
+	/*creationCompleteEffect: myWipeD;
+	removedEffect: myWipeU;*/
+}
+
+.notificationBackground
+{
+	colorsConfiguration: 2,2;
+	positioning: percentage;
+	gradientType: linear,radial;
+	fillColors: #189bee, #189bee;
+	fillAlphas:  1,1,1,0;
+	gradientRatio: 0,255,0,119;
+	angle: 90,0;
+	offsetX: 0,50;
+	offsetY: 0,-45;
+	spreadMethod: pad,pad;
+	interpolationMethod: rgb,linearRGB;
+	focalPointRatio: 0,0;
+	cornerRadius: 9;
+	borderThickness: 1;
+	borderColors: #2C2C7B, #FFFFFF;
+	borderAlphas: 1,1;
+	bordergradientRatio: 0,255;
+	borderAngle: -90;
+}
+
+.myTitleStyle
+{
+	fontSize: 11;
+	fontWeight: bold;
+	color: #084368;
+}
+
+.myMessageStyle
+{
+	fontStyle: bold;
+	backgroundAlpha: 1;
+}

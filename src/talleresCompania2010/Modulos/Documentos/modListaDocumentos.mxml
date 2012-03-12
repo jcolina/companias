@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+	width="100%" height="100%" 
+	creationComplete="initMod()">
+	
+	<mx:Script source="libModListaDocumentos.as"/>
+	
+	<mx:VBox width="100%" height="100%">
+		<mx:AdvancedDataGrid x="0" y="0" id="gridListaDocumentos" designViewDataType="tree" 
+				width="100%" height="100%" itemClick="abrirDoc(event)" dataTipFunction="buildToolTip">
+		<mx:dataProvider>
+            <mx:GroupingCollection id="groupCollec">
+                    <mx:Grouping>
+                        <mx:GroupingField id="groupGrupo" name="grupo"/>
+                    </mx:Grouping>
+            </mx:GroupingCollection>
+        </mx:dataProvider>     
+		<mx:columns>
+			<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('general_tipo_titulo')}" id="clmTipo" showDataTips="true"/>
+			<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('general_documento')}" id="clmTitulo" showDataTips="true"/>
+			<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('general_fecha')}" id="clmFecha" showDataTips="true"  />
+			<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('general_link')}" id="clmLink" visible="false"/>
+		</mx:columns>
+		</mx:AdvancedDataGrid>				
+		<mx:ControlBar horizontalAlign="center" verticalAlign="middle">
+			<mx:Button id="btnUpDoc" label="{IdiomaApp.getText('mod_lista_documento_subir')}"  icon="@Embed('assets/add.png')" />
+		</mx:ControlBar>	
+	</mx:VBox>
+	<mx:HTTPService id="httpListaDoc" method="POST" showBusyCursor="true" />
+</mx:Module>

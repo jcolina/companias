@@ -1,0 +1,7 @@
+/* CSS file */
+VScrollBar {
+   fillColors: #e0ffff, #000000, #666666, #ffffff;
+   trackColors: #94999b, #000000;
+   themeColor: #ffffff;
+   borderColor: #000000;
+}

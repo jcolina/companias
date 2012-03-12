@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+	width="100%" height="100%"
+	horizontalScrollPolicy="off"
+	initialize="initMod()">
+
+	<mx:Script source="libModFacturaEdit.as" />
+	
+	<mx:VBox width="100%">
+		<mx:Canvas width="100%">
+			<mx:Label verticalCenter="0" horizontalCenter="0" top="5" bottom="5" text="{IdiomaApp.getText('mod_factura_edit_fact_asociada')}" fontWeight="bold" fontStyle="italic" fontSize="12"/>
+		</mx:Canvas>
+		<mx:Canvas id="cnvEdit" width="100%" visible="false">
+			<mx:Grid width="100%" left="5" right="5">
+				<mx:GridRow width="100%">
+					<mx:GridItem>
+						<mx:Label text="{IdiomaApp.getText('mod_factura_edit_fact_selec')}" fontWeight="bold"/>
+					</mx:GridItem>
+					<mx:GridItem width="100%">
+						<mx:TextInput id="txtFacturaEdit" name="{IdiomaApp.getText('general_factura')}" width="100%" />
+					</mx:GridItem>
+				</mx:GridRow>
+				<mx:GridRow width="100%">
+					<mx:GridItem>
+						<mx:Label text="{IdiomaApp.getText('mod_facturas_info_monto')}" fontWeight="bold"/>
+					</mx:GridItem>
+					<mx:GridItem width="100%">
+						<mx:TextInput id="txtMontoEdit" name="{IdiomaApp.getText('mod_facturas_info_monto')}" width="100%" restrict="0-9"/>
+					</mx:GridItem>
+				</mx:GridRow>
+			</mx:Grid>
+		</mx:Canvas>
+		<mx:Canvas id="cnvButon" width="100%" visible="false">
+			<mx:Button verticalCenter="0" horizontalCenter="0" bottom="5" label="{IdiomaApp.getText('mod_factura_edit_fact')}" icon="@Embed(source='../../../assets/edit-24.png')" click="editFactura()"/>
+		</mx:Canvas>
+		<mx:Canvas width="100%">
+			<mx:DataGrid id="dtgFacturasEdit"
+				left="5" right="5"
+				bottom="5" top="5"
+				name="{IdiomaApp.getText('mod_factura_edit_fact_lis')}"
+				height="300" itemClick="onClickGrid(event)">
+				<mx:columns>
+					<mx:DataGridColumn dataField="IDFactura" visible="false"/>
+					<mx:DataGridColumn headerText="{IdiomaApp.getText('mod_facturas_info_numero')}" dataField="Factura"/>
+					<mx:DataGridColumn headerText="{IdiomaApp.getText('mod_facturas_info_monto')}" dataField="Monto" />
+					<mx:DataGridColumn headerText="{IdiomaApp.getText('general_accion')}" dataField="Accion" visible="false"/>									
+				</mx:columns>
+			</mx:DataGrid>
+		</mx:Canvas>
+		<mx:Canvas width="100%" id="cnvGuardar" visible="false">
+			<mx:Button verticalCenter="0" horizontalCenter="0" bottom="5" label="{IdiomaApp.getText('mod_factura_edit_guardar')}" icon="@Embed(source='../../../assets/save-24.png')" click="guardarCambios()"/>
+		</mx:Canvas>
+	</mx:VBox>
+	
+	<!-- Validadores -->
+	<mx:StringValidator id="vlFacturaEdit" required="true" requiredFieldError="{IdiomaApp.getText('mod_factura_edit_val_vacia')}"
+		source="{txtFacturaEdit}" property="text" />
+	<mx:StringValidator id="vlMontoEdit" required="true" requiredFieldError="{IdiomaApp.getText('mod_factura_edit_val_monto')}"
+		source="{txtMontoEdit}" property="text" />
+	<mx:NumberValidator id="vlGrillaFactura" lowerThanMinError="{IdiomaApp.getText('mod_factura_edit_val_factu')}"
+		property="selectedIndex" minValue="0"  source="{dtgFacturasEdit}" required="true" />
+</mx:Module>

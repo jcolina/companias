@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="100%" height="100%">
+	
+	
+	<mx:Script source="libModTareas.as" />
+
+<mx:Canvas styleName="listas" height="100%" width="100%">
+	
+	<mx:TabNavigator id="tabTareas" width="97%" height="97%" horizontalCenter="0" verticalCenter="0" creationPolicy="all">
+		<mx:Canvas id="cv2" label="{IdiomaApp.getText('mod_tareas_etapas')}" width="80%" height="80%">
+			<mx:ModuleLoader id="mlModTareas2" width="100%" height="100%"
+				paddingTop="5" paddingLeft="5" paddingRight="5"/>
+		</mx:Canvas>
+		<mx:Canvas id="cv3" label="{IdiomaApp.getText('mod_tareas_bitacora')}" width="80%" height="80%">
+			<mx:TabNavigator id="subBitacora" width="97%" height="97%" horizontalCenter="0" verticalCenter="0" creationPolicy="all">
+				<mx:Canvas id="cv31" label="{IdiomaApp.getText('mod_tareas_acciones')}" width="80%" height="80%">
+					<mx:ModuleLoader id="mlModTareas3" width="100%" height="100%"/>
+				</mx:Canvas>
+				<mx:Canvas id="cv32" label="{IdiomaApp.getText('general_mail')}" width="95%" height="80%">
+					<mx:ModuleLoader id="mlModTareas5" width="100%" height="100%"/>
+				</mx:Canvas>	
+			</mx:TabNavigator>
+		</mx:Canvas>
+		<mx:Canvas id="cv4" label="{IdiomaApp.getText('mod_tareas_informacion')}" width="80%" height="80%">
+			<mx:ModuleLoader id="mlModTareas4" width="100%" height="100%"/>
+		</mx:Canvas>
+	</mx:TabNavigator>
+
+</mx:Canvas>	
+	
+	<mx:HTTPService id="serviceCompanias" method="POST" requestTimeout="500" /> 
+	
+
+	
+</mx:Module>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+	 xmlns:components="com.hillelcoren.components.*"
+	 layout="absolute" 
+	 title="Notificar." showCloseButton="true" close="closePopUp()" preinitialize="initMod()">
+	 
+	 <mx:Script source="libModNotificarDocumento.as" />
+	 
+	 <mx:Fade id="wipeSMS" duration="1500" />
+	 
+	<mx:Form width="100%" height="100%" >
+			<mx:FormItem label="{IdiomaApp.getText('mod_notificar_documento_para')}" width="100%" styleName="label" required="true">
+			<mx:HBox width="100%">
+				<mx:Text id="txMails" enabled="true"/> 
+			</mx:HBox>
+		</mx:FormItem>
+		<mx:FormItem label="{IdiomaApp.getText('mod_notificar_documento_cc')}" width="100%" styleName="label">
+			<mx:VBox width="100%">
+				<components:AutoComplete id="txtCC" name="{IdiomaApp.getText('mod_notificar_comentario_lbl_cc')}" width="100%"
+					allowMultipleSelection="true" allowNewValues="true" allowEditingNewValues="true"
+					labelField="Correo" dropDownLabelFunction="dropDownLabelFunction" matchType="word" 
+					selectedItemStyleName="macMail"/>				<mx:Label width="100%" styleName="CC" text="{IdiomaApp.getText('mod_notificar_documento_text')}"/>
+			</mx:VBox>
+		</mx:FormItem>
+		<mx:FormItem label="{IdiomaApp.getText('mod_notificar_documento_asunto')}" width="100%" styleName="label" required="true">
+			<mx:TextInput id="txAsunto" width="100%" editable="false"/>
+		</mx:FormItem>
+		<mx:FormItem label="{IdiomaApp.getText('mod_notificar_documento_cuerpo')}" width="100%" styleName="label" required="true">
+			<mx:TextArea width="100%" height="150" id="txCuerpo" editable="false"/>
+		</mx:FormItem>
+		<mx:HBox width="498" verticalAlign="middle" horizontalAlign="right" paddingRight="15" height="46">
+			<mx:Button id="btnSendMail" label="{IdiomaApp.getText('mod_notificar_documento_enviar')}" click="aviso(event)"/>
+		</mx:HBox>
+	</mx:Form>
+
+ <!-- Servicios -->
+	<mx:HTTPService id="serviceMails" method="POST" requestTimeout="500" showBusyCursor="true"/>
+	<mx:HTTPService id="serviceSendMail" method="POST" requestTimeout="500" showBusyCursor="true"/>
+	<!-- url = "http://190.196.70.30:8763/services/admin/envioMail.HTTPEndpoint/envioMail" -->
+	
+ <!-- Validadores -->
+ 	<mx:RegExpValidator id="vlCC" source="{txtCC}" property="text" required="false"
+ 		noMatchError="{IdiomaApp.getText('mod_notificar_documento_mail_val')}"
+ 		expression="^([a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]\{2,4\})(, ?([a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]\{2,4\}))*?$"
+ 		/>
+ 	<mx:StringValidator id="vlCuerpo" required="true" requiredFieldError="{IdiomaApp.getText('mod_notificar_documento_cuerpo_mail_val')}"
+ 		source="{txCuerpo}" property="text" />
+ 	<mx:StringValidator id="vlAsunto" required="true" requiredFieldError="{IdiomaApp.getText('mod_notificar_documento_cuerpo_asunto_val')}"
+ 		source="{txAsunto}" property="text" />  	
+</mx:TitleWindow>

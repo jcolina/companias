@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+	width="100%" height="100%"
+	initialize="initMod()">
+	
+	<mx:Script source="libModImageView.as"/>
+	<mx:Script>
+		<![CDATA[
+			import talleresCompania2010.util.IdiomaApp;
+		]]>
+	</mx:Script>
+	
+	<mx:Fade id="fadeIn" duration="1000" alphaFrom="0.0" alphaTo="1.0"/>
+	
+	<mx:Canvas width="100%" height="100%" styleName="ImageContainer">
+		<mx:VBox  width="100%" height="100%" left="5" right="5" top="5" bottom="5">
+			<mx:Canvas width="100%" height="75%" styleName="SuperiorContainer">
+				<mx:HBox width="100%" height="100%">
+					<mx:Canvas height="100%" >					
+						<mx:LinkButton id="lnkLast" toolTip="{IdiomaApp.getText('mod_image_view_tool_ant')}" click="lastImage()" verticalCenter="0" mouseOver="onMouseOver(event)" mouseOut="onMouseOut(event)">
+							<mx:icon>{Class(objLeftIcon)}</mx:icon>
+						</mx:LinkButton>
+					</mx:Canvas>				
+					<mx:Image id="imgPrincipal" width="100%" height="100%" maxWidth="400" maintainAspectRatio="false" showEffect="{fadeIn}" buttonMode="true" useHandCursor="true" mouseChildren="false" click="onClickImage()"/>
+					<mx:Canvas height="100%">
+						<mx:LinkButton id="lnkNext" toolTip="{IdiomaApp.getText('mod_image_view_tool_sig')}" click="nextImage()" verticalCenter="0" mouseOver="onMouseOver(event)" mouseOut="onMouseOut(event)">
+							<mx:icon>{Class(objRightIcon)}</mx:icon>
+						</mx:LinkButton>
+					</mx:Canvas>
+				</mx:HBox>			
+			</mx:Canvas>			
+			<mx:Canvas width="100%" height="25%" styleName="InferiorContainer" verticalScrollPolicy="off">
+				<mx:HBox id="cnvContainer" width="100%" height="100%" top="6" bottom="6" left="6" right="6"/>
+			</mx:Canvas>
+		</mx:VBox>				
+	</mx:Canvas>
+</mx:Module>

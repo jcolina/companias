@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+	width="2000" height="64" 
+	initialize="initMod()">
+
+	<mx:Script source="libModGenRep.as" />
+	
+	<mx:HBox width="100%" height="64">
+		<mx:Canvas width="244" height="64">
+			<mx:ComboBox id="cboReportes" verticalCenter="0" change="mostrarFiltros()" left="15"></mx:ComboBox>
+			<mx:Label x="10" y="2" text="{IdiomaApp.getText('mod_generador_rep')}" fontWeight="bold"/>
+		</mx:Canvas>
+		<mx:ModuleLoader id="mlFiltro"/>
+		<mx:Spacer width="10"/>
+		<mx:Canvas height="64">
+			<mx:Button label="{IdiomaApp.getText('mod_generador_rep_filtrar')}" styleName="defaultButton" width="100" click="showGrafico()" verticalCenter="0" horizontalCenter="0"/>
+		</mx:Canvas>		
+	</mx:HBox>
+</mx:Module>

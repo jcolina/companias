@@ -1,0 +1,41 @@
+
+Button.btnMesCalendar
+{
+	upSkin:ClassReference('talleresCompania2010.Modulos.Agenda.classes.skins.ButtonSkin');
+    overSkin:ClassReference('talleresCompania2010.Modulos.Agenda.classes.skins.ButtonSkin');
+    downSkin:ClassReference('talleresCompania2010.Modulos.Agenda.classes.skins.ButtonSkin');
+    disabledSkin:ClassReference('talleresCompania2010.Modulos.Agenda.classes.skins.ButtonSkin');
+    selectedUpSkin:ClassReference('talleresCompania2010.Modulos.Agenda.classes.skins.ButtonSkin');
+    selectedOverSkin:ClassReference('talleresCompania2010.Modulos.Agenda.classes.skins.ButtonSkin');
+    selectedDownSkin:ClassReference('talleresCompania2010.Modulos.Agenda.classes.skins.ButtonSkin');
+    selectedDisabledSkin:ClassReference('talleresCompania2010.Modulos.Agenda.classes.skins.ButtonSkin');
+	textAlign: left;
+	paddingBottom: 0;
+	width: 48px;
+}
+
+GridItem.grdMeses
+{
+	width: 48px;
+}
+
+GridRow.grdFilas
+{
+	width: 160px;
+}
+Label.DescripcionGraficos
+{
+	fontSize: 10;
+	fontWeight: bold;
+}
+TitleWindow.SelectorFecha {
+    roundedBottomCorners: false;
+    borderColor: haloSilver;
+    backgroundColor: haloSilver;
+    borderAlpha: 0.8;
+    backgroundAlpha: 0.8;
+    dropShadowEnabled: false;
+}
+
+
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" 
+	width="18" height="16" 
+ 	dataChange="init()" creationComplete="init()">
+	
+	<mx:Script source="libComIconDocumento.as" />
+	
+	<mx:Image id="imgDocumento" width="16" height="16" horizontalCenter="0" verticalCenter="0"/>
+</mx:Canvas>

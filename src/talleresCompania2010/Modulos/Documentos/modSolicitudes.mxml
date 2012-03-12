@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+	width="100%" height="100%"
+	initialize="initMod()">
+	
+	<mx:Script source="libModSolicitudes.as"/>
+	
+	<mx:VBox width="100%" height="100%">
+		<mx:AdvancedDataGrid id="gridSolicitudes" designViewDataType="tree"
+			width="100%" height="40%"
+			styleFunction="colorRows" itemRenderer="talleresCompania2010.util.ADG.ADGItemRenderCustom"
+			itemClick="onClickGrid(event)">
+			<mx:columns>
+				<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('mod_solicitudes_id_solicitud')}" dataField="IDSolicitud" visible="false"/>
+				<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('general_documento')}" dataField="NombreTipo" />
+				<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('general_documento')}" dataField="TipoDocumento" visible="false"/>
+				<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('mod_solicitudes_responsable')}" dataField="Responsable"/>
+				<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('mod_solicitudes_fecha_esperada')}" dataField="FechaEsperada"/>				
+				<mx:AdvancedDataGridColumn headerText="{IdiomaApp.getText('mod_solicitudes_color')}" dataField="Color" visible="false"/>
+			</mx:columns>
+		</mx:AdvancedDataGrid>
+		<mx:Spacer height="10"/>
+		<mx:Canvas width="100%" height="60%" verticalScrollPolicy="off">
+			<mx:VBox width="100%" height="100%">
+				<mx:Grid>
+					<mx:GridRow width="100%" height="100%">
+						<mx:GridItem width="100%" height="100%">
+							<mx:Text text="{labelTipoDocumento}" fontWeight="bold"/>
+						</mx:GridItem>
+						<mx:GridItem width="100%" height="100%">
+							<mx:ComboBox id="cboTipoDocumento" name="{IdiomaApp.getText('mod_solicitudes_tipo_doc')}" prompt="{IdiomaApp.getText('general_prompt')}"></mx:ComboBox>
+						</mx:GridItem>
+					</mx:GridRow>
+					<mx:GridRow width="100%" height="100%">
+						<mx:GridItem width="100%" height="100%">
+							<mx:Text text="{labelFechaEsperada}" fontWeight="bold"/>
+						</mx:GridItem>
+						<mx:GridItem width="100%" height="100%">
+							<mx:DateField id="dtFechaEsperada"/>
+						</mx:GridItem>
+					</mx:GridRow>
+					<mx:GridRow width="100%" height="100%">
+						<mx:GridItem width="100%" height="100%">
+							<mx:Label text="{IdiomaApp.getText('mod_solicitudes_responsable')}" fontWeight="bold"/>
+						</mx:GridItem>
+						<mx:GridItem width="100%" height="100%">
+							<mx:ComboBox id="cboResponsable" name="{IdiomaApp.getText('mod_solicitudes_responsable')}" prompt="{IdiomaApp.getText('general_prompt')}" change="activarEmail(event)"></mx:ComboBox>
+						</mx:GridItem>
+					</mx:GridRow>
+					<mx:GridRow id="rowEmail" width="100%" height="100%" visible="false">
+						<mx:GridItem width="100%" height="100%">
+							<mx:Text text="{labelEmailResponsable}" fontWeight="bold"/>
+						</mx:GridItem>
+						<mx:GridItem width="100%" height="100%">
+							<mx:Label id="lblEmailResponsable" fontWeight="bold"/>
+						</mx:GridItem>
+					</mx:GridRow>
+				</mx:Grid>
+				<mx:Spacer height="10"/>
+				<mx:Canvas width="100%" height="100%">
+					<mx:Button label="{IdiomaApp.getText('mod_solicitudes_ingresa_sol')}" styleName="defaultButton" width="143" height="30" horizontalCenter="0" click="addSolicitud()"/>
+				</mx:Canvas>
+			</mx:VBox>			
+		</mx:Canvas>
+	</mx:VBox>
+	
+	<!--Validadores-->
+	<mx:NumberValidator id="vlTipoDocumento" lowerThanMinError="{IdiomaApp.getText('mod_solicitudes_debe_sel_doc')}"
+		property="selectedIndex" minValue="0"  source="{cboTipoDocumento}"/>
+	<mx:NumberValidator id="vlResponsable" lowerThanMinError="{IdiomaApp.getText('mod_solicitudes_debe_sel_res')}"
+		property="selectedIndex" minValue="0"  source="{cboResponsable}"/>
+</mx:Module>

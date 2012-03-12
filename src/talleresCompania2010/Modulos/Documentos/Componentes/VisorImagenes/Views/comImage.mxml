@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" 
+	width="90" height="74" 
+	styleName="SmallImageContainer">
+	
+	<mx:Script source="libComImage.as"/>
+	
+	<mx:Image id="imgFuente" width="100%" height="100%"  maintainAspectRatio="false" mouseOut="onMouseOut()" mouseOver="onMouseOver()" buttonMode="true" useHandCursor="true" mouseChildren="false"/>	
+</mx:Canvas>

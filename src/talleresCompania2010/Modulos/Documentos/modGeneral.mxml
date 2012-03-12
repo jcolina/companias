@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+	width="100%" height="100%"
+	creationComplete="initMod()">	 
+	
+	<mx:Script source="libModGeneral.as" />
+	
+	<mx:TabNavigator id="tabTareas" width="97%" height="97%" horizontalCenter="0" verticalCenter="0" creationPolicy="all" change="setTabPosition(event)">
+		<mx:Canvas label="{IdiomaApp.getText('general_documentos')}" width="80%" height="80%">
+			<mx:ModuleLoader id="mdlDocumentos" width="100%" height="100%"
+				paddingTop="5" paddingLeft="5" paddingRight="5"
+				url="talleresCompania2010/Modulos/Documentos/modListaDocumentos.swf"/>
+		</mx:Canvas>
+		<mx:Canvas label="{IdiomaApp.getText('general_imagenes')}" width="80%" height="80%">
+			<mx:ModuleLoader id="mdlImagenes" width="100%" height="100%"
+				paddingTop="5" paddingLeft="5" paddingRight="5"
+				url="talleresCompania2010/Modulos/Documentos/modImagenes.swf"/>
+		</mx:Canvas>
+		<mx:Canvas label="{IdiomaApp.getText('general_solicitudes')}" width="80%" height="80%">
+			<mx:ModuleLoader id="mdlSolicitudes" width="100%" height="100%" 
+				paddingTop="5" paddingLeft="5" paddingRight="5"
+				url="talleresCompania2010/Modulos/Documentos/modSolicitudes.swf"/>
+		</mx:Canvas>
+	</mx:TabNavigator>	
+</mx:Module>

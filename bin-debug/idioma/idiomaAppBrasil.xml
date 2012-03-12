@@ -1,0 +1,785 @@
+<data>
+	<Patente>Placa</Patente>
+	<Rut>CPF</Rut>
+	<Liquidador>Perito</Liquidador>
+	<Pieza>Quantidade</Pieza>
+	<Repuesto>Reposto</Repuesto>
+	<CodigoPaisCelular>569</CodigoPaisCelular>
+	<LatitudCapital>-33.43778</LatitudCapital>
+	<LongitudCapital>-70.65028</LongitudCapital>
+	
+	<!-- Generales-->
+	<general_grid_rut>CPF</general_grid_rut>
+	<general_grid_nombre>Nome</general_grid_nombre>
+	<general_grid_apellido>Sobrenome</general_grid_apellido>
+	<general_grid_celular>Celular</general_grid_celular>
+	<general_grid_email>E-mail</general_grid_email>
+	<general_grid_fono>Fone</general_grid_fono>
+	<mod_liquidador_alert_selec_liq>Deves Selecionar o Perito</mod_liquidador_alert_selec_liq>
+	<mod_liquidador_pop_title_mod>Modificar Perito</mod_liquidador_pop_title_mod>
+	<general_fallo_ws>Se produziu um erro de chamada ao serviço</general_fallo_ws>
+	<mod_liquidador_title_alert_guarda>Salvar</mod_liquidador_title_alert_guarda>
+	<general_prompt>Selecione...</general_prompt>
+	<mod_rep_prom_notiticaciones_tool_exportar_excel>Exportar dados para Excel</mod_rep_prom_notiticaciones_tool_exportar_excel>
+	<mod_rep_prom_notiticaciones_lbl_exportar_excel>Exportar dados para Excel</mod_rep_prom_notiticaciones_lbl_exportar_excel>
+	<mod_rep_prom_notiticaciones_tool_exportar_img>Exportar dados para imagem</mod_rep_prom_notiticaciones_tool_exportar_img>
+	<mod_rep_prom_notiticaciones_lbl_exportar_img>Exportar dados para imagem</mod_rep_prom_notiticaciones_lbl_exportar_img>
+	<general_patente>Placa</general_patente>
+	<general_siniestro>Sinistro</general_siniestro>
+	<general_pen>Pend.</general_pen>
+	<general_doc>Doc</general_doc>
+	<general_marca>Marca</general_marca>
+	<general_modelo>Modelo</general_modelo>
+	<general_nom_contacto>Nombe Contato</general_nom_contacto>
+	<general_fecha_ingreso>Data de Entrada</general_fecha_ingreso>
+	<general_fecha_entrega>Data de Entrega</general_fecha_entrega>
+	<general_observaciones>Observações</general_observaciones>
+	<general_recepcionista>Recepcionista</general_recepcionista>
+	<general_fecha>Data</general_fecha>
+	<general_usuario>Usuário</general_usuario>
+	<general_accion>Ação</general_accion>
+	<general_comentario>Comentário</general_comentario>
+	<general_mail>E-mail</general_mail>
+	
+	<general_vehiculo>Veículos</general_vehiculo>
+	<general_agenda>Agenda</general_agenda>
+	<general_reporte>Relatório</general_reporte>
+	<general_facturas>Faturas</general_facturas>
+	<general_liquidador>Perito</general_liquidador>	
+	
+	<general_lunes>Segunda</general_lunes>
+	<general_martes>Terça </general_martes>
+	<general_miercoles>Quarta</general_miercoles>
+	<general_jueves>Quinta</general_jueves>
+	<general_viernes>Sexta</general_viernes>
+	<general_sabado>Sábado</general_sabado>
+	<general_domingo>Domingo</general_domingo>	
+	<general_enero>Janeiro</general_enero>
+	<general_febrero>Fevereiro</general_febrero>
+	<general_marzo>Março</general_marzo>
+	<general_abril>Abril</general_abril>
+	<general_mayo>Maio</general_mayo>
+	<general_junio>Junho</general_junio>
+	<general_julio>Julho </general_julio>
+	<general_agosto>Agosto</general_agosto>
+	<general_septiembre>Setembro</general_septiembre>
+	<general_octubre>Outubro</general_octubre>
+	<general_noviembre>Novembro</general_noviembre>
+	<general_diciembre>Dezembro</general_diciembre>
+	
+	<!-- 4|||||||||||-------------- -->
+	<general_grid_observacion>Observação</general_grid_observacion>
+	<general_grid_desarme>Desmontagem</general_grid_desarme>
+	<general_grid_desabolladura>Lanternagem</general_grid_desabolladura>
+	<general_grid_preparacion>Preparo</general_grid_preparacion>
+	<general_grid_pintura>Pintura</general_grid_pintura>
+	<general_grid_armado>Montagem</general_grid_armado>
+	<general_grid_terminacion>Acabamento</general_grid_terminacion>
+	<general_grid_notifi>Notificações</general_grid_notifi>
+	<general_grid_cambio_fecha>Mudança de data entrega</general_grid_cambio_fecha>
+	<general_grid_taller>Oficina</general_grid_taller>
+	<general_grid_local>Local</general_grid_local>
+	<general_grid_f_ingre>Data de Entrada</general_grid_f_ingre>
+	<general_grid_f_ter>Data de Entrega</general_grid_f_ter>
+	<general_dato>Dado</general_dato>
+	<general_talleres>Oficinas</general_talleres>
+	<general_aviso_title>Aviso</general_aviso_title>
+	<general_locales>Locais</general_locales>
+	<lib_mod_rep_ranking2_alert_contener>O gráfico deve conter dados</lib_mod_rep_ranking2_alert_contener>
+	<general_grid_taller_rut>CNPJ da Oficna</general_grid_taller_rut>
+	<general_grid_prom_noti>Média de Notificações</general_grid_prom_noti>
+	<ingresa_solicitud_alert_title_error>Erro</ingresa_solicitud_alert_title_error>
+	<general_hora_promedio>Média de Horas</general_hora_promedio>
+	<general_observacion>Observação</general_observacion>
+	<general_observacion_total>Total Observação</general_observacion_total>
+	<mod_rep_general_etapas>Etapas</mod_rep_general_etapas>
+	<general_otras_companias>Outras companhias</general_otras_companias>
+	<mod_etapas_promedio_mes_prom>Média por etapas mensal</mod_etapas_promedio_mes_prom>	
+	<general_ene>Jan -</general_ene>
+	<general_feb>Fev -</general_feb>
+	<general_mar>Mar -</general_mar>
+	<general_abr>Abr -</general_abr>
+	<general_may>Mai -</general_may>
+	<general_jun>Jun -</general_jun>
+	<general_jul>Jul -</general_jul>
+	<general_ago>Ago -</general_ago>
+	<general_sep>Set -</general_sep>
+	<general_oct>Out -</general_oct>
+	<general_nov>Nov -</general_nov>
+	<general_dic>Dez -</general_dic>	
+	<mod_rep_cambio_fecha_cambio_tot_fecha>Total mudança data de entrega</mod_rep_cambio_fecha_cambio_tot_fecha>	
+	<general_ene_cal>Jan</general_ene_cal>
+	<general_feb_cal>Fev</general_feb_cal>
+	<general_mar_cal>Mar</general_mar_cal>
+	<general_abr_cal>Abr</general_abr_cal>
+	<general_may_cal>Mai</general_may_cal>
+	<general_jun_cal>Jun</general_jun_cal>
+	<general_jul_cal>Jul</general_jul_cal>
+	<general_ago_cal>Ago</general_ago_cal>
+	<general_sep_cal>Set</general_sep_cal>
+	<general_oct_cal>Out</general_oct_cal>
+	<general_nov_cal>Nov</general_nov_cal>
+	<general_dic_cal>Dez</general_dic_cal>	
+	<general_detalle_etapa>Detalhe etapas</general_detalle_etapa>
+	<general_documentos>Documentos</general_documentos>
+	<general_imagenes>Imagens</general_imagenes>
+	<general_solicitudes>Solicitações</general_solicitudes>
+	<general_tipo_titulo>Tipo/Título</general_tipo_titulo>
+	<general_documento>Documento</general_documento>
+	<general_link>Link</general_link>
+	<general_titulo>Título</general_titulo>
+	<general_tipo>Tipo</general_tipo>
+	<general_etapa>Etapa</general_etapa>
+	<general_descripcion>Descrição</general_descripcion>
+	<general_titulo2>Título</general_titulo2>
+	<general_gestor_taller>Gestor da oficina</general_gestor_taller>
+	<general_compania>Companhia</general_compania>
+	<general_yo>Eu</general_yo>
+	<general_peso>Peso</general_peso>
+	<general_envia>Enviar</general_envia>
+	<general_repuesto>Peças</general_repuesto>	
+	<general_error>Erro</general_error>
+	<mod_factura_principal_idvehiculo>IDVeículo</mod_factura_principal_idvehiculo>
+	<mod_factura_principal_total_factura>Total Fatura</mod_factura_principal_total_factura>
+	<mod_factura_opciones_lbl_filtro>Filtro</mod_factura_opciones_lbl_filtro>
+	<general_factura>Fatura</general_factura>
+	<mod_facturas_info_monto>Valor</mod_facturas_info_monto>
+	<mod_facturas_info_numero>Número</mod_facturas_info_numero>
+	<general_aceptar>Aceitar</general_aceptar>
+	<general_cancelar>Cancelar</general_cancelar>
+	<general_telefono>Telefone</general_telefono>
+	<general_dia>Dias</general_dia>
+	
+	
+		<!-- 	Liquidador    -->
+	<!-- modLiquidador-->
+	
+	<mod_liquidador_title_panel_op>Opções Perito</mod_liquidador_title_panel_op>
+	<mod_liquidador_boton_ingresar>Ingressar Perito</mod_liquidador_boton_ingresar>
+	<mod_liquidador_boton_modificar>Modificar Perito</mod_liquidador_boton_modificar>
+	<mod_liquidador_boton_guardar>Salvar</mod_liquidador_boton_guardar>
+	<mod_liquidador_title_panel_lista>Lista Peritos</mod_liquidador_title_panel_lista>
+	
+	<!-- libModLiquidador -->
+	<mod_liquidador_pop_title_agre>Adicionar Perito</mod_liquidador_pop_title_agre>
+	<mod_liquidador_pop_title_eli>Eliminar Perito</mod_liquidador_pop_title_eli>	
+	<mod_liquidador_title_alert_lista>Lista Peritos</mod_liquidador_title_alert_lista>
+	<mod_liquidador_alert_no_datos>Não foram encontrados dados</mod_liquidador_alert_no_datos>
+	<mod_liquidador_title_alert_sin_reg>Peritos sem Registros</mod_liquidador_title_alert_sin_reg>	
+	<mod_liquidador_alert_no_datos_mod>Não existem Registros Modificados ou Adicionados</mod_liquidador_alert_no_datos_mod>
+	<mod_liquidador_alert_reg_creado>Registro Criado</mod_liquidador_alert_reg_creado>
+	<mod_liquidador_alert_title_ingresa>Ingressar Perito</mod_liquidador_alert_title_ingresa>
+	<mod_liquidador_alert_reg_modificado>Registro Modificado</mod_liquidador_alert_reg_modificado>
+	
+	<!-- Reportes -->
+	<!-- modRepRanking20-->
+	<mod_rep_ranking_tool_exp_excel>Exportar Dados para Excel</mod_rep_ranking_tool_exp_excel>
+	<mod_rep_ranking_tool_exp_img>Exportar Dados para Imagem</mod_rep_ranking_tool_exp_img>
+	<mod_rep_ranking_text>Este relatório mostra o tempo médio total de reparo (horas hábil) por oficina/local e seu equivalente para outras companhias.</mod_rep_ranking_text>	
+	<mod_rep_ranking_title_local>Locais</mod_rep_ranking_title_local>
+	<mod_rep_ranking_title_hora>Média de Horas</mod_rep_ranking_title_hora>
+	<mod_rep_ranking_prom_cia>Média Companhia</mod_rep_ranking_prom_cia>
+	<mod_rep_ranking_prom_cia_ot>Média outras Companhias</mod_rep_ranking_prom_cia_ot>
+	
+	<!-- modGeneradorRep-->
+	<mod_generador_rep>Selecione o tipo de relatório</mod_generador_rep>
+	<mod_generador_rep_filtrar>Filtrar</mod_generador_rep_filtrar>
+	
+	<!-- modRepRanking-->
+	
+	<mod_rep_ranking_tiempo>Tempo médio Total:</mod_rep_ranking_tiempo>
+	<mod_rep_ranking_text_este>Este relatório indica a média das cinco oficinas mais rápidas, média de horas, para avançar um veículo, de uma etapa para outra.</mod_rep_ranking_text_este>
+	<mod_rep_ranking_tit_locales>Locais</mod_rep_ranking_tit_locales>
+	<mod_rep_ranking_tit_horas_prom>Média de Horas</mod_rep_ranking_tit_horas_prom>
+	<mod_rep_ranking_tit_prom>Média</mod_rep_ranking_tit_prom>
+	<mod_rep_ranking_text_este_lento>Este relatório indica a média das cinco oficinas mais lentas, média de horas, para avançar um veículo, de uma etapa para outra.</mod_rep_ranking_text_este_lento>	
+	
+	<!-- modFiltroAll -->
+	<mod_filtro_all_taller>Oficina</mod_filtro_all_taller>
+	<mod_filtro_all_marca>Marca</mod_filtro_all_marca>
+	<mod_filtro_all_local>Local</mod_filtro_all_local>
+	<mod_filtro_all_zona>Zona</mod_filtro_all_zona>
+	
+	<!-- modFiltroFechas-->
+	<mod_filtro_fecha_label_ini>Data Incial</mod_filtro_fecha_label_ini>
+	<mod_filtro_fecha_label_ter>Data Final</mod_filtro_fecha_label_ter>
+	<!-- modFitroPromEtapas-->
+	<mod_filtro_prom_etapas_taller>Oficina</mod_filtro_prom_etapas_taller>
+	<mod_filtro_prom_etapas_marca>Marca</mod_filtro_prom_etapas_marca>
+	<mod_filtro_prom_etapas_local>Local</mod_filtro_prom_etapas_local>
+	<mod_filtro_prom_etapas_mes>Mês 1</mod_filtro_prom_etapas_mes>
+	<mod_filtro_prom_etapas_ini>Início</mod_filtro_prom_etapas_ini>
+	<mod_filtro_prom_etapas_ter>Término</mod_filtro_prom_etapas_ter>
+	<mod_filtro_prom_etapas_mes2>Mês 2</mod_filtro_prom_etapas_mes2>
+
+	<!-- modRepPromNotificaciones -->
+	
+	<mod_rep_prom_notiticaciones_text>Este relatório indica a média de e-mails enviados automaticamente pela aplicação, média por oficina.</mod_rep_prom_notiticaciones_text>
+	<mod_rep_prom_notiticaciones_cat_fi_nom>Nome</mod_rep_prom_notiticaciones_cat_fi_nom>
+	<mod_rep_prom_notiticaciones_cat_tit_tall>Oficinas</mod_rep_prom_notiticaciones_cat_tit_tall>
+	<mod_rep_prom_notiticaciones_cat_tit_prom>Média de Notificações</mod_rep_prom_notiticaciones_cat_tit_prom>
+	<mod_rep_prom_notiticaciones_cat_fi_x>Média</mod_rep_prom_notiticaciones_cat_fi_x>
+	<mod_rep_prom_notiticaciones_cat_fi_y>Nome</mod_rep_prom_notiticaciones_cat_fi_y>
+	<!-- modRepPromedio -->
+	
+	<mod_rep_promedio_text>Este relatório indica o tempo médio de veículos nas oficinas, que se encuentram com a observação "Autorizado", especificado por etapa, calculo baseado em uma semana de segunda à sexta, com 9 horas de trabalho por dia.</mod_rep_promedio_text>
+	<mod_rep_promedio_tit_horas>Média de Horas</mod_rep_promedio_tit_horas>
+
+	<!-- modRepObservaciones -->
+	<mod_rep_observcaciones_text>Este relatório indica a quantidade de veículos nas oficinas que se encuentram com as observações: "Ingresso na Oficina", "Autorizado", "Perda Total", "Entregue ao guincho" e "Veículos em Trânsito".</mod_rep_observcaciones_text>
+	<mod_rep_observcaciones_text_ob_tit>Observações de veículos</mod_rep_observcaciones_text_ob_tit>
+	<mod_rep_observcaciones_text_tot_ob_tit>Total observações</mod_rep_observcaciones_text_tot_ob_tit>
+	<mod_rep_observcaciones_observ>Observações</mod_rep_observcaciones_observ>
+	<mod_rep_observcaciones_observ_y>Total_Observação</mod_rep_observcaciones_observ_y>
+	<mod_rep_observcaciones_observ_x>Observação</mod_rep_observcaciones_observ_x>
+
+	<!-- modRepEtapasPromedioMes-->
+	<mod_rep_etapas_promedio_mes_text>Este relatório indica o tempo médio mensal de veículos nas oficinas, mês atual em relação ao anterior, especificado por etapa.</mod_rep_etapas_promedio_mes_text>
+	
+	<!-- modRepGeneral-->
+	<mod_rep_general_text>Este relatório indica a quantidade de veículos nas oficinas com a observação “Autorizado”, especificados por etapa.</mod_rep_general_text>
+	<mod_rep_general_text_tot_vehi>O total de veículos é:</mod_rep_general_text_tot_vehi>
+	<mod_rep_general_text_tit_eta>Etapas</mod_rep_general_text_tit_eta>
+	<mod_rep_general_text_tit_ve>Veículos</mod_rep_general_text_tit_ve>
+	<mod_rep_general_text_ve_por_eta>Veículos por etapa</mod_rep_general_text_ve_por_eta>
+	
+	
+	<!-- comGraficoProm-->
+	<com_grafico_prom_title_talle>Oficinas</com_grafico_prom_title_talle>
+	<com_grafico_prom_title_hora_prom>Média de Horas</com_grafico_prom_title_hora_prom>	
+	<com_grafico_prom_boton_cerrar>Fechar</com_grafico_prom_boton_cerrar>
+    
+	<!-- comGraficoNotificaciones-->
+	<com_grafico_notificaciones_tit_locales>Locais</com_grafico_notificaciones_tit_locales>
+	<com_grafico_notificaciones_tit_prom>Média de Notificações</com_grafico_notificaciones_tit_prom>
+	<com_grafico_notificaciones_x>Nome</com_grafico_notificaciones_x>
+	<com_grafico_notificaciones_y>Média</com_grafico_notificaciones_y>
+	
+	<!-- comGraficoDetalle-->
+	<com_grafico_detalle_tit_tall>Oficinas</com_grafico_detalle_tit_tall>
+	<com_grafico_detalle_tit_por>Porcentos</com_grafico_detalle_tit_por>
+	<com_grafico_detalle_bar_porcen>Porcentagem veículos</com_grafico_detalle_bar_porcen>
+	<com_grafico_detalle_bar_tot>Total veículos na etapa</com_grafico_detalle_bar_tot>
+	<com_grafico_detalle_bar_tot_repa>Total veículos em processo de repararo</com_grafico_detalle_bar_tot_repa>
+	<!-- modPrincipal-->
+	<mod_principal_lbl_taller>Oficina</mod_principal_lbl_taller>
+	<mod_principal_lbl_locales>Locais</mod_principal_lbl_locales>
+	<mod_principal_tool_auto>Veículos Autorizados por cumprir data de entrega</mod_principal_tool_auto>
+	<mod_principal_tool_mov>Veículos sem movimento em 3 dias.</mod_principal_tool_mov>
+	<mod_principal_tool_pen>Veículos com reposto pendente por cumprir data de entrega.</mod_principal_tool_pen>
+	<mod_principal_tool_con>Veículos com mais de 2 dias sem Aprovação.</mod_principal_tool_con>
+	<mod_principal_tool_pendiente>Veículos com reposto pendente.</mod_principal_tool_pendiente>
+	<mod_principal_tool_perdida>Veículos com perda Total.</mod_principal_tool_perdida>
+		
+	<!-- mod Bitacora-->
+	<mod_bitacora_acep>Aceitar</mod_bitacora_acep>
+	<mod_bitacora_comentario>Comentário:</mod_bitacora_comentario>
+	<mod_bitacora_notificar>Notificar</mod_bitacora_notificar>
+	
+	<!-- modTareas -->
+	<mod_tareas_etapas>Etapas</mod_tareas_etapas>
+	<mod_tareas_bitacora>Ações</mod_tareas_bitacora>
+	<mod_tareas_acciones>Ações</mod_tareas_acciones>
+	<mod_tareas_informacion>Informação</mod_tareas_informacion>
+	
+	<!-- modDerechoMain -->
+	<mod_derecho_main_info>Informação</mod_derecho_main_info>
+	<mod_derecho_main_docu>Documentos</mod_derecho_main_docu>
+	<!-- modAgenda-->
+	<mod_agenda_tool_mes_ant>Mês Anterior</mod_agenda_tool_mes_ant>
+	<mod_agenda_tool_mes_sig>Mês Seguinte</mod_agenda_tool_mes_sig>
+	<mod_agenda_tool_mes_actual>Mês Atual</mod_agenda_tool_mes_actual>
+	<mod_agenda_lbl_mes_actual>Ir para Mês Atual</mod_agenda_lbl_mes_actual>
+	
+	<!-- modDetalleAgenda-->
+
+	<mod_detalle_agenda_grid_taller>Oficina</mod_detalle_agenda_grid_taller>	
+	<mod_detalle_agenda_grid_local>Local</mod_detalle_agenda_grid_local>	
+	<mod_detalle_agenda_grid_cant>Quant. Veículos</mod_detalle_agenda_grid_cant>
+	<mod_detalle_agenda_ve_entregar>Veículos à entregar</mod_detalle_agenda_ve_entregar>
+	<mod_detalle_agenda_tit_info>Informação Oficinas</mod_detalle_agenda_tit_info>
+	
+	<!-- tallerescompania -->
+	<talleres_compania_title>Controle de Oficina</talleres_compania_title>
+	<talleres_compania_tool_fin>Finalizar Sessão</talleres_compania_tool_fin>
+	<talleres_compania_duda>Em caso de dúvidas ligue para 56-2-9799153 ou relate problemas com o sistema clicando</talleres_compania_duda>
+	<talleres_compania_aqui>aqui</talleres_compania_aqui>
+	
+		<!------4/////// ------>
+
+	<!-- modRepEtapasPromedioMes-->
+	<mod_rep_etapas_promedio_mes_cat_det>Detalhe</mod_rep_etapas_promedio_mes_cat_det>
+
+	<!-- modRepCambioFecha-->
+	<mod_rep_cambio_fecha_text>Este relatório indica a quantidade total de mudanças da data de entrega de todos os veículos.</mod_rep_cambio_fecha_text>
+
+	<!-- libModRepRanking2 -->
+	<lib_mod_rep_ranking2_tit_alert>Gráfico Ranking V2</lib_mod_rep_ranking2_tit_alert>
+	<lib_mod_rep_ranking2_local>Local:</lib_mod_rep_ranking2_local>
+	<lib_mod_rep_ranking2_promedio>Média:</lib_mod_rep_ranking2_promedio>
+	<lib_mod_rep_ranking2_mje_cantidad>Quantidade de veículos entregues a clientes no período:</lib_mod_rep_ranking2_mje_cantidad>
+	<lib_mod_rep_ranking2_ranking>Ranking de locales</lib_mod_rep_ranking2_ranking>
+	<lib_mod_rep_ranking2_promedio_cia>Média de outras Companhias</lib_mod_rep_ranking2_promedio_cia>
+
+	<!-- libModRepRanking-->
+	<lib_mod_re_ranking_title_alert>Relatório Ranking</lib_mod_re_ranking_title_alert>
+	<lib_mod_re_ranking_mejores>Ranking melhores oficinas</lib_mod_re_ranking_mejores>
+	<lib_mod_re_ranking_promedio>Media de avanço de veículos por etapas</lib_mod_re_ranking_promedio>
+	<lib_mod_re_ranking_peores>Ranking piores oficinas</lib_mod_re_ranking_peores>
+
+	<!-- ImagenChartExport             DUDA-->
+	<imagen_chart_export>Imagem Gráfico</imagen_chart_export>
+
+	<!-- libModRepPromNotificaciones -->
+	<lib_mod_rep_prom_not_alert_title_grefico>Gráfico média de notificações</lib_mod_rep_prom_not_alert_title_grefico>
+	<lib_mod_rep_prom_not_alert_error>Erro ao abrir o detalhe de Notificações</lib_mod_rep_prom_not_alert_error>
+	<lib_mod_rep_prom_not_taller>Oficina:</lib_mod_rep_prom_not_taller>
+	<lib_mod_rep_prom_not_promedio>Média:</lib_mod_rep_prom_not_promedio>
+	<lib_mod_rep_prom_not_tot_vehi>Total de veículos:</lib_mod_rep_prom_not_tot_vehi>
+	<lib_mod_rep_prom_not_tot_mail>Total de e-mails enviados:</lib_mod_rep_prom_not_tot_mail>
+	<lib_mod_rep_prom_not_prom_noti>Média de notificações</lib_mod_rep_prom_not_prom_noti>
+
+	<!-- libModRepPromedio-->
+	<lib_mod_rep_promedio_prom>Média por etapas </lib_mod_rep_promedio_prom>
+
+	<!-- grafPromedio-->
+	<graf_promedio_error_alert_carga>Erro a chamada de serviço para cargar informação do gráfico</graf_promedio_error_alert_carga>
+	<graf_promedio_error_alert_carga_title>Relatório Média por Veículos</graf_promedio_error_alert_carga_title>
+	<graf_promedio_promedio_etapa>Média por etapas</graf_promedio_promedio_etapa>
+
+	<!-- libModRepObservaciones-->
+	<mod_rep_observaciones_title_alert_error>Relatório Observações</mod_rep_observaciones_title_alert_error>
+	<mod_rep_observaciones_total_vehiculos>Total de veículos:</mod_rep_observaciones_total_vehiculos>
+	<!-- libModRepGestionTaller-->
+	<mod_rep_gestion_taller_alert_title_error>Relatório Todos os Veículos</mod_rep_gestion_taller_alert_title_error>
+	<mod_rep_gestion_taller_alert_no_fechas>Não existem dados para o intervalo de datas selecionado</mod_rep_gestion_taller_alert_no_fechas>
+	<mod_rep_gestion_taller_rep_vei_gen>Relatório geral de veiculos</mod_rep_gestion_taller_rep_vei_gen>
+	<mod_rep_gestion_taller_listado_vacio>A listagem não deve estar vazia</mod_rep_gestion_taller_listado_vacio>
+
+	<!-- libModRepGeneral-->
+	<mod_rep_general_title_alert_rep>Relatório Geral de Veículos</mod_rep_general_title_alert_rep>
+	<mod_rep_general_alert_abrir>Erro ao abrir o detalhe da etapa</mod_rep_general_alert_abrir>
+	<mod_rep_general_cant_vehi>Quantidade veículos</mod_rep_general_cant_vehi>
+
+	<!-- libModEtapasPromedioMes-->
+	<mod_etapas_promedio_mes_alert_title_repor>Relatório Média por Mês</mod_etapas_promedio_mes_alert_title_repor>
+	<mod_etapas_promedio_mes_tiempo>Tempo:</mod_etapas_promedio_mes_tiempo>
+	<mod_etapas_promedio_mes_total>Total:</mod_etapas_promedio_mes_total>
+
+	<!-- libModRepCambioFecha -->	
+	<mod_rep_cambio_fecha_title_alert_cambio>Gráfico mudança de data de entrega</mod_rep_cambio_fecha_title_alert_cambio>
+	<mod_rep_cambio_fecha_sobre>Sobre uma amostra de</mod_rep_cambio_fecha_sobre>
+	<mod_rep_cambio_fecha_produjo>veículos, se produziu uma média total de</mod_rep_cambio_fecha_produjo>
+	<mod_rep_cambio_fecha_cambio>, mudanças de data de entrega por veículos na oficina</mod_rep_cambio_fecha_cambio>
+
+	<!--libModGenRep	 -->
+
+	<mod_gen_rep_tit_alert_title_reporte>Relatório Locais</mod_gen_rep_tit_alert_title_reporte>
+	<mod_gen_rep_tit_alert_title_lista>Lista Marcas</mod_gen_rep_tit_alert_title_lista>
+	<mod_gen_rep_tit_alert_title_lista_ta>Lista Oficinas</mod_gen_rep_tit_alert_title_lista_ta>
+	<mod_gen_rep_tit_fecha_inicio>A data de inicial deve ser inferior ou igual a final</mod_gen_rep_tit_fecha_inicio>
+
+	<!-- COMPONENTE REPORTE	 -->
+	<com_grafico_detalle_cantidad_actual>Quantidade veículos na etapa atual</com_grafico_detalle_cantidad_actual>
+
+	<!-- libComGraficoPromDetalle-->
+	<com_grafico_prom_detalle_alert_title>Listagem Oficinas</com_grafico_prom_detalle_alert_title>
+	<com_grafico_prom_detalle_prom_etapa>Detalhe média por etapas</com_grafico_prom_detalle_prom_etapa>
+	<com_grafico_prom_detalle_hora_prom>Média por Hora</com_grafico_prom_detalle_hora_prom>
+
+	<!-- libComGraficoNotificaciones-->
+	<com_grafico_notificaciones_detalle_noti>Detalhe notificações</com_grafico_notificaciones_detalle_noti>
+	<com_grafico_notificaciones_promedio_noti>Média de Notificações</com_grafico_notificaciones_promedio_noti>
+
+
+	<!-- DOCUMENTOS ------ -->
+	<!-- modGeneral --->
+	<!-- modListaDocumento-->
+	<mod_lista_documento_subir>subir documento</mod_lista_documento_subir>
+
+	<!-- modNotificarDocumento -->
+	<mod_notificar_documento_para>Para</mod_notificar_documento_para>
+	<mod_notificar_documento_cc>CC</mod_notificar_documento_cc>
+	<mod_notificar_documento_asunto>Assunto</mod_notificar_documento_asunto>
+	<mod_notificar_documento_cuerpo>Mensagem</mod_notificar_documento_cuerpo>
+	<mod_notificar_documento_enviar>Enviar</mod_notificar_documento_enviar>
+	<mod_notificar_documento_text>Para adicionar varias cópias, separe os e-mails com vírgula</mod_notificar_documento_text>
+	<mod_notificar_documento_mail_val>Deves ingressar e-mails válidos separados por ',' (vírgula). (mail@mail.com, mail2@mail.com).</mod_notificar_documento_mail_val>
+	<mod_notificar_documento_cuerpo_mail_val>Deves ingressar a mensagem do e-mail</mod_notificar_documento_cuerpo_mail_val>
+	<mod_notificar_documento_cuerpo_asunto_val>Deves ingressar o Asunto</mod_notificar_documento_cuerpo_asunto_val>
+
+	<!-- modSolicitudes -->
+	<mod_solicitudes_id_solicitud>IDSolicitação</mod_solicitudes_id_solicitud>
+	<mod_solicitudes_responsable>Responsável</mod_solicitudes_responsable>
+	<mod_solicitudes_fecha_esperada>Data Esperada</mod_solicitudes_fecha_esperada>
+	<mod_solicitudes_color>cor</mod_solicitudes_color>
+	<mod_solicitudes_tipo_doc>Tipo Documento</mod_solicitudes_tipo_doc>
+	<mod_solicitudes_ingresa_sol>Ingressar solicitação</mod_solicitudes_ingresa_sol>
+	<mod_solicitudes_debe_sel_doc>Deves Selecionar o tipo de documento</mod_solicitudes_debe_sel_doc>
+	<mod_solicitudes_debe_sel_res>Deves Selecionar o responsável</mod_solicitudes_debe_sel_res>
+
+	<!-- modUpDocumentos-->
+	<mod_up_documentos_title>Carregar documentos</mod_up_documentos_title>
+	<mod_up_documentos_notificar>Notificar:</mod_up_documentos_notificar>
+
+	<mod_up_documentos_title_info>Informação do documento</mod_up_documentos_title_info>
+	<mod_up_documentos_debe>Deves Selecionar o tipo</mod_up_documentos_debe>
+	<mod_up_documentos_debe_titulo>Deves Ingressar o título</mod_up_documentos_debe_titulo>
+
+	<!-- modUpDocumentoSolicitud-->
+
+	<!-- COMPONENTE -->
+	<!-- comUpFileSolicitud-->
+	<up_file_solicitud_title>Lista documentos</up_file_solicitud_title>
+	<up_file_solicitud_tool_agrega>Adicionar documento(s)</up_file_solicitud_tool_agrega>
+	<up_file_solicitud_tool_elimina>Eliminar documento(s)</up_file_solicitud_tool_elimina>
+	<up_file_solicitud_tool_cancelar>Cancelar</up_file_solicitud_tool_cancelar>
+	<up_file_solicitud_tool_subir>Subir documento(s)</up_file_solicitud_tool_subir>
+
+	<!-- modSinImagen-->
+	<mod_sin_imagenes_text>Não foram encontradas imagens</mod_sin_imagenes_text>
+	<!-- modLoadImagen -->
+	<mod_load_imagen>Carregando imagens... Espere um momento.</mod_load_imagen>
+	<!-- modImageView-->
+	<mod_image_view_tool_ant>Imagem anterior</mod_image_view_tool_ant>
+	<mod_image_view_tool_sig>Imagem seguinte</mod_image_view_tool_sig>
+
+	<!-- libModUpDocumento-->
+	<mod_up_documentos_val_faltan>Faltam dados requeridos</mod_up_documentos_val_faltan>
+	<mod_up_documentos_not_cargado>Os documentos foram carregados satisfatoriamente</mod_up_documentos_not_cargado>
+	<mod_up_documentos_mas_documentos>(Mais documentos)...</mod_up_documentos_mas_documentos>
+	<mod_up_documentos_tipo>Tipo:</mod_up_documentos_tipo>
+	<mod_up_documentos_documento>Documento:</mod_up_documentos_documento>
+	<mod_up_documentos_archivos>Arquivo(s):</mod_up_documentos_archivos>
+
+	<!-- libModSolicitudes -->
+
+	<mod_solicitudes_esperada>Esperada</mod_solicitudes_esperada>
+	<mod_solicitudes_alert_vehi>Deves Selecionar um Veículo</mod_solicitudes_alert_vehi>
+
+	<!-- libModNotificarDocuemtno-->
+	<mod_notificar_documento_perso>Personalizado</mod_notificar_documento_perso>
+
+	<!-- libModListaDocumento -->
+	<mod_lista_documento_alert>Deves Selecionar um Veículo</mod_lista_documento_alert>
+	<mod_lista_documento_etapa>Etapa :</mod_lista_documento_etapa>
+
+	<!-- liUpfile -->
+	<up_file_documento>Documento(s):</up_file_documento>
+	<up_file_documento_mje>...já carregados na lista. Modifique o nome(s) ou selecione outro documento(s).</up_file_documento_mje>
+	<up_file_documento_cargado>Documento(s) já carregado na lista</up_file_documento_cargado>
+	<up_file_error_subida>Erro ao subir arquivos ></up_file_error_subida>
+	<up_file_completando>Completando Envio -</up_file_completando>
+	<up_file_completado>Envio Completo</up_file_completado>
+	<up_file_alert_ya_existe>já existe um arquivo com o mesmo nome</up_file_alert_ya_existe>
+	<up_file_alert_error>Ocorreu um erro ao subir o arquivo</up_file_alert_error>
+
+	<!-- Clase IngresaSolicitud-->
+	<ingresa_solicitud_alert_title_recep>Listagem Recepcionista</ingresa_solicitud_alert_title_recep>
+	<ingresa_solicitud_alert_title_sol>Listagem de Solicitações</ingresa_solicitud_alert_title_sol>
+	<ingresa_solicitud_alert_title_sol_ingreso>Ingresso de Solicitações</ingresa_solicitud_alert_title_sol_ingreso>
+	<ingresa_solicitud_alert_error>Erro ao ingressar solicitação</ingresa_solicitud_alert_error>
+	<ingresa_solicitud_not_exitoso>Solicitação ingressada com êxito</ingresa_solicitud_not_exitoso>
+	<ingresa_solicitud_not_fail>Erro ao ingressar solicitação</ingresa_solicitud_not_fail>
+
+	<!-- CLase UpSolicitudDocumentos-->
+	<up_solicitud_documento_alert_title_actua>Atualizar Solicitação</up_solicitud_documento_alert_title_actua>
+	<up_solicitud_documento_not_actua_error>Ocorreu um erro ao atualizar a solicitação</up_solicitud_documento_not_actua_error>
+	<up_solicitud_documento_not_exitosa>Solicitação atualizada com êxito</up_solicitud_documento_not_exitosa	>
+
+
+	<!--	Factura     -->
+	<!-- modFacturaOpciones -->
+	<mod_factura_opciones_marcar>Marcar veículos para associar faturas</mod_factura_opciones_marcar>
+	<!-- modFacturasInterfaz -->
+	<mod_facturas_interfaz_fact>Faturas do Veículo</mod_facturas_interfaz_fact>
+
+	<!-- modFacturaInfo-->
+	<mod_facturas_info_ingrese>Ingresse Faturas</mod_facturas_info_ingrese>
+	<mod_facturas_info_factura>Fatura</mod_facturas_info_factura>
+	<mod_facturas_info_agrega>Adicionar fatura</mod_facturas_info_agrega>
+	<mod_facturas_info_grid_id>IDFatura</mod_facturas_info_grid_id>
+	<mod_facturas_info_asoc>Associar faturas a veículos</mod_facturas_info_asoc>
+
+	<mod_facturas_info_vehi_sel>Veículos Selecionados</mod_facturas_info_vehi_sel>
+
+	<mod_facturas_info_val_debe>Deves Ingressar o número de fatura</mod_facturas_info_val_debe>
+	<mod_facturas_info_val_error>Deves Ingressar o valor da fatura</mod_facturas_info_val_error>
+
+	<!-- modFacturaEdit-->
+	<mod_factura_edit_fact_asociada>Faturas Associadas</mod_factura_edit_fact_asociada>
+	<mod_factura_edit_fact_selec>Faturas Selecionadas</mod_factura_edit_fact_selec>
+	<mod_factura_edit_fact>Editar fatura</mod_factura_edit_fact>
+	<mod_factura_edit_fact_lis>Lista Faturas</mod_factura_edit_fact_lis>		
+	<mod_factura_edit_guardar>Salvar modificações</mod_factura_edit_guardar>
+	<mod_factura_edit_val_vacia>O campo fatura não deve estar vazio</mod_factura_edit_val_vacia>
+	<mod_factura_edit_val_monto>O campo valor não deve estar vazio</mod_factura_edit_val_monto>
+	<mod_factura_edit_val_factu>Deves selecionar uma fatura</mod_factura_edit_val_factu>
+
+	<!-- libModFactura -->
+	<mod_factura_opciones_fecha_ini>A data inicial deve ser inferior ou igual a final</mod_factura_opciones_fecha_ini>
+	<mod_factura_opciones_listado_no_vacio>A lista não deve estar vazia</mod_factura_opciones_listado_no_vacio>
+
+	<!-- libModFacturaInfo-->
+	<mod_factura_info_agregar_fact>Deves Adicionar ao menos uma fatura</mod_factura_info_agregar_fact>
+	<mod_factura_info_agregar_vincular>Deves vincular ao menos um veículo</mod_factura_info_agregar_vincular>
+	<mod_factura_info_agregar_modificar>Deves modificar ao menos um registro para guardar</mod_factura_info_agregar_modificar>
+
+	<!-- Clase Principal    factura-->
+	<principal_title_alert_lista>Lista célula fatura</principal_title_alert_lista>
+	<!-- Clase FacturaInfo   factura-->
+	<factura_info_title_alert_guarda>Guardar faturas</factura_info_title_alert_guarda>
+	<factura_info_fact_guardada>Faturas associadas com êxito</factura_info_fact_guardada>
+	<factura_info_fact_problema_info>Ocorreu um erro ao salvar a informação</factura_info_fact_problema_info>
+	<!-- Clase FacturaEdit-->
+	<factura_edit_alert_title_lista_grilla>Lista célula fatura</factura_edit_alert_title_lista_grilla>
+	<factura_edit_alert_editar_fact>Editar fatura</factura_edit_alert_editar_fact>
+	<factura_edit_alert_actualizada>Atualização realizada com êxito</factura_edit_alert_actualizada>
+	<factura_edit_alert_problema_actua>Ocorreu um erro ao atualizar a informação</factura_edit_alert_problema_actua>
+
+	<!--  LIQUIDADOR ++++++++++++++++++++ -->
+	<!-- comLiquidador-->
+	<com_liquidador_tool_ingresa_nombre>Deves Ingressar o Nome</com_liquidador_tool_ingresa_nombre>
+	<com_liquidador_tool_ingresa_apellido>Deves Ingressar o Sobrenome</com_liquidador_tool_ingresa_apellido>
+	<com_liquidador_tool_ingresa_celular>Deves Ingressar o Celular</com_liquidador_tool_ingresa_celular>
+	<com_liquidador_tool_ingresa_mail>Deves ingressar o e-mail</com_liquidador_tool_ingresa_mail>
+	<com_liquidador_val_caracter>Caracteres inválidos</com_liquidador_val_caracter>
+	<com_liquidador_val_dom>O domínio não é válido</com_liquidador_val_dom>
+	<com_liquidador_val_arroba>É necessária uma @ em seu e-mail</com_liquidador_val_arroba>
+	<com_liquidador_val_nombre_dom>É necessário um nome de domínio</com_liquidador_val_nombre_dom>
+	<com_liquidador_val_car_inva>Caracter Inválido</com_liquidador_val_car_inva>
+	<com_liquidador_val_rut_inva>CPF Inválido</com_liquidador_val_rut_inva>
+	<com_liquidador_rut_debe>Deves Ingressar o CPF</com_liquidador_rut_debe>
+
+	<com_liquidador_rut_liquidador>CPF Perito</com_liquidador_rut_liquidador>
+	<com_liquidador_nombre_liquidador>Nome do Perito</com_liquidador_nombre_liquidador>
+	<com_liquidador_apellido_liquidador>Sobrenome Perito</com_liquidador_apellido_liquidador>
+	<com_liquidador_celular_liquidador>Celular Perito</com_liquidador_celular_liquidador>
+	<com_liquidador_email_liquidador>E-mail Perito</com_liquidador_email_liquidador>
+	<com_liquidador_fono_liquidador>Telefone Perito</com_liquidador_fono_liquidador>
+	<com_liquidador_agrega_liquidador>Adicionar Perito</com_liquidador_agrega_liquidador>
+	<com_liquidador_modificar_liquidador>Modificar Perito</com_liquidador_modificar_liquidador>
+	<com_liquidador_cerrar_liquidador>Fechar</com_liquidador_cerrar_liquidador>
+
+	<!-- modLiquidador-->
+	<mod_liquidador_title_lista>Listagem Peritos</mod_liquidador_title_lista>
+
+	<!-- libComLiquidador -->
+	<com_liquidador_datos_invalidos>Dados Inválidos...</com_liquidador_datos_invalidos>
+	<com_liquidador_ya_existe>Perito já existente</com_liquidador_ya_existe>
+	<com_liquidador_title_error>Erro ao Modificar</com_liquidador_title_error>
+	<com_liquidador_ya_ingresado>Registro já Ingressado, Deseja Modificar?</com_liquidador_ya_ingresado>
+	<com_liquidador_confirma>Confirmar Modificação</com_liquidador_confirma>
+	<com_liquidador_registro_modificado>Registro Atualizado</com_liquidador_registro_modificado>
+	<com_liquidador_registro_title_mod>Modificar Registro</com_liquidador_registro_title_mod>
+	<com_liquidador_registro_cancelado>Registro Cancelado</com_liquidador_registro_cancelado>
+
+
+	<!-- GENERAL -->
+	<!-- modOpciones-->
+	<mod_opciones_title>Administração de conta</mod_opciones_title>
+	<mod_opciones_calular>Celular</mod_opciones_calular>
+	<mod_opciones_email>E-mail</mod_opciones_email>
+	<mod_opciones_actual_contra>Senha Atual</mod_opciones_actual_contra>
+	<mod_opciones_nueva_contra>Nova Senha</mod_opciones_nueva_contra>
+	<mod_opciones_reingre_contra>Re-ingresse a Nova Senha</mod_opciones_reingre_contra>
+	<mod_opciones_actualizar>Atualizar</mod_opciones_actualizar>
+	<mod_opciones_val_complete>Complete seu e-mail</mod_opciones_val_complete>
+	<mod_opciones_val_caracter>Caracteres inválidos</mod_opciones_val_caracter>
+	<mod_opciones_val_dominio>O dominio não é válido</mod_opciones_val_dominio>
+	<mod_opciones_val_necesita>É necessária uma @ em seu e-mail</mod_opciones_val_necesita>
+	<mod_opciones_val_necesita_nom>É necessário um nome de domínio</mod_opciones_val_necesita_nom>
+
+	<!-- modNotificarComentario-->
+	<mod_notificar_comentario_title>Notificar.</mod_notificar_comentario_title>
+	<mod_notificar_comentario_para>Para</mod_notificar_comentario_para>
+	<mod_notificar_gestor_taller>Gestor da oficina</mod_notificar_gestor_taller>
+	<mod_notificar_gestor_agregar_copiar>Para adicionar várias cópias, separe os e-mails com uma vírgula</mod_notificar_gestor_agregar_copiar>
+	<mod_notificar_gestor_enviar>Enviar</mod_notificar_gestor_enviar>
+	<mod_notificar_gestor_mail>Deves ingressar e-mails válidos separados por ',' (vírgula). (mail@mail.com, mail2@mail.com).</mod_notificar_gestor_mail>
+
+
+
+	<!-- mod_datos_contacto-->
+
+	<mod_datos_contacto_info_cont>Informação do contato</mod_datos_contacto_info_cont>
+	<mod_datos_contacto_info_vehi>Informação do veículo</mod_datos_contacto_info_vehi>
+	<mod_datos_contacto_num_sin>N° Sinistro</mod_datos_contacto_num_sin>
+	<mod_datos_contacto_debe_nombre>Deves Ingressar o nome do contato</mod_datos_contacto_debe_nombre>
+	<mod_datos_contacto_debe_apellido>Deves Ingressar o sobrenome do contato</mod_datos_contacto_debe_apellido>
+	<mod_datos_contacto_debe_telefono>Deves Ingressar o telefone do contato</mod_datos_contacto_debe_telefono>
+	<mod_datos_contacto_debe_celu>Deves Ingressar o celular do contato</mod_datos_contacto_debe_celu>
+
+	<mod_datos_contacto_debe_patente>Deves Ingressar a placa do veículo</mod_datos_contacto_debe_patente>
+	<mod_datos_contacto_debe_siniestro>Deves Ingressar o número de sinistro</mod_datos_contacto_debe_siniestro>
+	<mod_datos_contacto_debe_mail>Deves ingressar o e-mail</mod_datos_contacto_debe_mail>
+	<mod_datos_contacto_debe_caracter>Caracteres inválidos</mod_datos_contacto_debe_caracter>
+	<mod_datos_contacto_debe_dominio>El dominio não é válido</mod_datos_contacto_debe_dominio>
+	<mod_datos_contacto_debe_arro>É necessária uma @ em seu e-mail</mod_datos_contacto_debe_arro>
+	<mod_datos_contacto_debe_nombre_dom>É necessário um nome de domínio</mod_datos_contacto_debe_nombre_dom>
+
+	<!-- modBitacoraMail-->
+	<mod_bitacora_fecha_env>Data de Envio</mod_bitacora_fecha_env>
+	<mod_bitacora_emisor>Emissor</mod_bitacora_emisor>
+	<mod_bitacora_destinatario>Destinatário</mod_bitacora_destinatario>
+	<mod_bitacora_asunto>Assunto</mod_bitacora_asunto>
+
+	<!-- modAsignarTarea-->
+	<mod_asignar_tarea_tarea>Tarefas</mod_asignar_tarea_tarea>
+	<mod_asignar_tarea_responsable>Responsável</mod_asignar_tarea_responsable>
+	<mod_asignar_tarea_duracion>Duración</mod_asignar_tarea_duracion>
+	<mod_asignar_tarea_crear_tareas>Criar tarefas</mod_asignar_tarea_crear_tareas>
+
+	<!-- CLASE	AsignarTarea -->
+	<asignar_tareas_sol_tarea>Solicitar Tarefas</asignar_tareas_sol_tarea>
+	<asignar_tareas_horas>Horas</asignar_tareas_horas>
+	<asignar_tareas_debe>Deves selecionar ao menos 1 tarefa para realizar a ação solicitada.</asignar_tareas_debe>
+	<asignar_tareas_creada>Tarefas criadas com exito</asignar_tareas_creada>
+
+	<!-- libModPrincipal-->
+	<mod_principal_debe_cargada>Deves estar carregada a célular com veículos para filtrar por sinistro</mod_principal_debe_cargada>
+	<mod_principal_debe_cargada_patente>Deves ingressar a patente a buscar.</mod_principal_debe_cargada_patente>
+	<mod_principal_debe_listado>Lista_Veículos_</mod_principal_debe_listado>
+	<mod_principal_debe_no_datos_grilla>Não existem dados na célula</mod_principal_debe_no_datos_grilla>
+
+	<!-- libMopdOpciones-->
+	<mod_opciones_ingresa_antigua>Deves ingressar a senha antiga</mod_opciones_ingresa_antigua>
+	<mod_opciones_ingresa_nueva>Deves ingressar a nova senha</mod_opciones_ingresa_nueva>
+	<mod_opciones_reingresa_nueva>Deves re-ingressar a nova senha</mod_opciones_reingresa_nueva>
+	<mod_opciones_contra_no_corresponde>A senha atual inválida</mod_opciones_contra_no_corresponde>
+	<mod_opciones_contra_no_corresponde_coinciden>As senhas não coincidem, deves ingressar as mesmas senhas para atualizar</mod_opciones_contra_no_corresponde_coinciden>
+
+	<!--modDetalleAgenda -->
+	<detalle_agenda_alert_detalle>Detalhe Agenda</detalle_agenda_alert_detalle>
+	<!-- modBitacora-->
+	<mod_bitacora_alert_ingresa_comentario>Deves Ingressar um comentário</mod_bitacora_alert_ingresa_comentario>
+	<mod_bitacora_alert_ingresa_comentario_alert>Advertência</mod_bitacora_alert_ingresa_comentario_alert>
+
+	<!-- clase BITACORA-->
+	<bitacora_alert_title_carga>Carregar ações</bitacora_alert_title_carga>
+	<bitacora_debe_ingresar_com>Deves Ingressar um comentário</bitacora_debe_ingresar_com>
+	<bitacora_debe_ingresar_com_title>Advertência</bitacora_debe_ingresar_com_title>
+	<bitacora_envio_comentario_title>Envio de Comentário</bitacora_envio_comentario_title>
+
+	<!-- clase CONTACTO-->
+	<contacto_title_alert_cont>Contato</contacto_title_alert_cont>
+	<contacto_cont_no_encontrado>Contato não encontrado</contacto_cont_no_encontrado>
+	<!-- clase DATOSCONTACTO-->
+	<datos_contacto_metodo_abs>Este é um método abstrato, não pode ser utilizado diretamente, deves re-escrevê-lo.</datos_contacto_metodo_abs>
+	<datos_contacto_datos_title>Dados Contato</datos_contacto_datos_title>
+	<!-- Clase DatosGrilla-->
+	<datos_grilla_title_lista_estado>Listagem Estados</datos_grilla_title_lista_estado>
+	<datos_grilla_title_lista_talleres>Listagem Oficinas</datos_grilla_title_lista_talleres>
+	<datos_grilla_no_cargo_vehiculo>Não foi possível selecionar o veículo, porque foi encontrada a oficina na lista.</datos_grilla_no_cargo_vehiculo>
+	<datos_grilla_posci>Posicionar oficina</datos_grilla_posci>
+	<datos_grilla_title_lista_locales>Listagem Locais</datos_grilla_title_lista_locales>
+	<datos_grilla_posci_local>Posicionar local</datos_grilla_posci_local>
+	<datos_grilla_selec_taller_local>Deves selecionar uma oficina e um local</datos_grilla_selec_taller_local>
+	<datos_grilla_title_alert_lista_patente>Lista Por Placas</datos_grilla_title_alert_lista_patente>
+	<datos_grilla_no_encontro_encargado>Não se encontrou um Encarregado de Oficina</datos_grilla_no_encontro_encargado>
+	<datos_grilla_encargado_taller>Encarregado de Oficina :</datos_grilla_encargado_taller>
+	<datos_grilla_capacidad>Capacidade</datos_grilla_capacidad>
+	<datos_grilla_capacidad_actual>Capacidade atual:</datos_grilla_capacidad_actual>
+	<datos_grilla_capacidad_error_obtener>Erro ao obter a capacidade</datos_grilla_capacidad_error_obtener>
+	<datos_grilla_capacidad_error_servicio>Erro no resultado do serviço.</datos_grilla_capacidad_error_servicio>
+	<datos_grilla_title_lista_tareas>Lista Tarefas</datos_grilla_title_lista_tareas>
+	<datos_grilla_no_cargo_vehiculo_local>Não foi possível selecionar o veículo porque não foi encontrado o local na lista</datos_grilla_no_cargo_vehiculo_local>
+
+	<!-- CLASE Email -->
+	<email_no_envio>Não foi possível realizar o envio do e-mail</email_no_envio>
+	<email_enviado_a>E-mail enviado a:</email_enviado_a>
+	<email_envio>Envio e-mail</email_envio>
+	<email_enviado_a_sms>SMS enviado ao número:</email_enviado_a_sms>
+	<email_envio_mje>Envio mensagem de texto</email_envio_mje>
+	<email_sin_info>sem informação</email_sin_info>
+	<email_envio_mje>sem informação</email_envio_mje>
+
+	<!-- CLASE	 ListaTareas-->
+	<lista_tareas_no_etapas>Não existem etapas designadas.</lista_tareas_no_etapas>
+	<lista_tareas_alert_title_listado>Listagem de Tarefas</lista_tareas_alert_title_listado>
+
+	<!-- CLASE Login-->
+
+	<login_title_alert_login>Login</login_title_alert_login>
+	<login_title_alert_user_invalido>Usuário/Password Inválido para esta aplicação</login_title_alert_user_invalido>
+	<login_title_alert_invalid_user>Usuário/Password Inválido</login_title_alert_invalid_user>
+
+	<!-- CLASE MailBitacora-->
+	<mail_bitacora_title_mail_lista>Lista e-mail</mail_bitacora_title_mail_lista>
+
+	<!-- CLASE NotificarComentaro-->
+	<notificar_comentario_alert_title_carga>Carregar lista de e-mails</notificar_comentario_alert_title_carga>
+	<notificar_comentario_alert_notifica>NotificarComentario.as > sole-mails :</notificar_comentario_alert_notifica>
+	<notificar_comentario_alert_verficicar_comentario>Verifique o ingresso correto de todos os campos.</notificar_comentario_alert_verficicar_comentario>
+	<notificar_comentario_alert_debe_seleccionar>Deves selecionar a quem enviará el e-mail.</notificar_comentario_alert_debe_seleccionar>
+
+	<!--CLASE NotificarDocumento -->
+	<notificar_documento_alert_title_plantilla>Modelos</notificar_documento_alert_title_plantilla>
+	<notificar_documento_alert_error_carga_tipo>Erro ao carregar Lista de Tipos</notificar_documento_alert_error_carga_tipo>
+	<notificar_documento_alert_error_carga_tipo_title>Lista Tipos</notificar_documento_alert_error_carga_tipo_title>
+	<notificar_documento_alert_seleccionar_destino>Deves selecionar a quem enviará o e-mail.</notificar_documento_alert_seleccionar_destino>
+
+	<!-- CLASE Opciones-->
+	<opciones_alert_title_lista>Lista Oficinas</opciones_alert_title_lista>
+	<opciones_alert_title_actualizacion>Atualização</opciones_alert_title_actualizacion>
+	<opciones_alert_actualizacion_exitosa>Atualização realizada com êxito</opciones_alert_actualizacion_exitosa>
+	<opciones_alert_actualizacion_fallo>Falha na atualização</opciones_alert_actualizacion_fallo>
+
+	<!-- CLASE UpDocumento -->
+	<up_documento_alert_listar>Lista de Solicitações</up_documento_alert_listar>
+	<up_documento_alert_carga_mail_listar>Carregar lista de e-mails</up_documento_alert_carga_mail_listar>
+	<up_documento_not_com>NotificarComentario.as > sole-mails :</up_documento_not_com>
+	
+	<!-- Ultimo Traducido-->
+	<bitacora_comentario_hace>Durante</bitacora_comentario_hace>
+	<bitacora_comentario_hora>Hora</bitacora_comentario_hora>
+	<bitacora_comentario_horas>Horas</bitacora_comentario_horas>
+	<bitacora_comentario_segun>Alguns Segundos</bitacora_comentario_segun>
+	<bitacora_comentario_minuto>Minuto</bitacora_comentario_minuto>
+	<bitacora_comentario_minutos>Minutos</bitacora_comentario_minutos>
+	<bitacora_comentario_dias_apro>Dias Aprox.</bitacora_comentario_dias_apro>
+	<bitacora_comentario_ayer>Ontem</bitacora_comentario_ayer>
+	<bitacora_comentario_mes>Mês Aprox.</bitacora_comentario_mes>
+	<bitacora_comentario_meses>Meses Aprox.</bitacora_comentario_meses>
+	<com_post_usuario>Usuário:</com_post_usuario>
+	<com_post_comentario>Comentário:</com_post_comentario>
+	<com_post_fecha>Data:</com_post_fecha>
+
+	<combobox_filter_default_tooltip>Realizar busca</combobox_filter_default_tooltip>
+	<combobox_filter_default_title_window>Filtrar lista</combobox_filter_default_title_window>
+	<combobox_filter_validate_combobox_null>Não foi especificada a fonte dos dados</combobox_filter_validate_combobox_null>
+	<combobox_filter_validate_combobox_no_data>A lista não contém dados</combobox_filter_validate_combobox_no_data>
+
+	<!-- month view ultimos-->	
+	<month_views_haga_click>Clique aqui para ver detalhes</month_views_haga_click>
+	<month_views_vehi_entregar>Veículos à entregar</month_views_vehi_entregar>
+	
+	<mod_filtro_prom_etapas_ini_alert>Nenhum veículo.</mod_filtro_prom_etapas_ini_alert>
+	
+	
+	<!-- Dias -->
+	<datos_grilla_dia_lunes>Seg</datos_grilla_dia_lunes>
+	<datos_grilla_dia_martes>Ter</datos_grilla_dia_martes>
+	<datos_grilla_dia_miercoles>Qua</datos_grilla_dia_miercoles>
+	<datos_grilla_dia_jueves>Qui</datos_grilla_dia_jueves>
+	<datos_grilla_dia_viernes>Sex</datos_grilla_dia_viernes>
+	<datos_grilla_dia_sabado>Sab</datos_grilla_dia_sabado>
+	<datos_grilla_dia_domingo>Dom</datos_grilla_dia_domingo>
+	
+		<mod_principal_grilla_cono>Identificação</mod_principal_grilla_cono>
+		
+		
+			<!-- COmbo Box con los reportes --->
+	<combo_reportes_opcion_obser>Por Observações</combo_reportes_opcion_obser>
+	<combo_reportes_opcion_etapas>Por Etapas</combo_reportes_opcion_etapas>
+	<combo_reportes_opcion_tiempo_prom>Tempo Médio por Etapas</combo_reportes_opcion_tiempo_prom>
+	<combo_reportes_opcion_tiempo_prom_mes>Média por Etapas mensal</combo_reportes_opcion_tiempo_prom_mes>
+	<combo_reportes_opcion_tiempo_ranking_talleres>Ranking de Oficinas</combo_reportes_opcion_tiempo_ranking_talleres>
+	<combo_reportes_opcion_tiempo_ranking_talleres_v>Ranking de Oficinas V2.0</combo_reportes_opcion_tiempo_ranking_talleres_v>
+	<combo_reportes_opcion_tiempo_ranking_prom_noti>Média de Notificações</combo_reportes_opcion_tiempo_ranking_prom_noti>
+	<combo_reportes_opcion_tiempo_ranking_prom_todos>Todos os veículos</combo_reportes_opcion_tiempo_ranking_prom_todos>
+	<combo_reportes_opcion_tiempo_ranking_total>Total mudança de data</combo_reportes_opcion_tiempo_ranking_total>
+
+
+	
+</data>

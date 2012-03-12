@@ -1,0 +1,308 @@
+/* CSS file */
+/*   Application {
+   backgroundImage: Embed(source="assets/backgrounds.swf#retroFifties");
+}   */
+
+Application {
+   backgroundColor: #869ca7;
+   backgroundGradientColors: #5fbccd, #3e84c2;
+   backgroundGradientAlphas: 0.5, 1;
+   
+}
+
+.accordionHeader
+{
+	cornerRadius: 0;
+	paddingLeft: 0;
+	textAlign: left;
+	fillAlphas: 1.0, 1.0;
+	fillColors: #5FBCCD, #718BAE;
+	headerStyleName: accordionHeader;
+}
+
+
+TabNavigator {
+   cornerRadius: 5;
+   horizontalGap: 0;
+   tabOffset: 3;
+   backgroundAlpha: 0;
+   borderColor: #aab3b3;
+   dropShadowEnabled: true;
+   tabStyleName: "myTabs";
+   firstTabStyleName: "myTabs";
+   lastTabStyleName: "myTabs";
+   selectedTabTextStyleName: "mySelectedTabs";
+}
+
+.myTabs {
+   highlightAlphas: 0, 0;
+   fillAlphas: 0, 0;
+   fillColors: #ffffff, #ffffff;
+   backgroundAlpha: 1;
+   themeColor: #999999;
+}
+
+.mySelectedTabs {
+   letterSpacing: 0;
+}
+HDividedBox
+{
+	paddingBottom: 3;
+	paddingLeft: 3;
+	paddingRight: 3;
+	paddingTop: 3;
+}
+
+ApplicationControlBar {
+   fillAlphas: 0.3, 0;
+   shadowDirection: right;
+}
+
+Panel
+{
+	paddingBottom: 3;
+	paddingLeft: 3;
+	paddingRight: 3;
+	paddingTop: 3;
+}
+
+/* Canvas.tareas
+{
+	backgroundColor: #FFFFFF;
+	borderStyle: none;
+	cornerRadius: 15;
+	fontSize: 10;
+	verticalCenter: 0;
+	horizontalCenter: 0;
+	backgroundAlpha: 0;
+} */
+
+/* Canvas.listas
+{
+	top: 0;
+	borderStyle: solid;
+	cornerRadius: 10;
+} */
+
+Text.bitacora {
+	fontWeight: normal;
+}
+
+Canvas.listas {
+	backgroundColor: #FFFFFF;
+	borderStyle: solid;
+	borderThickness: 0;
+	cornerRadius: 8;
+	editable: false;
+	paddingRight: 5;
+	paddingLeft: 5;
+	backgroundAlpha: .4;
+}
+
+HRule.tareas {
+   strokeColor: #0b0e0e;
+   shadowColor: #cccccc;
+   strokeWidth: 2;
+}
+
+Grid
+{
+	padding-bottom: 3;
+	padding-left: 3;
+	padding-right: 3;
+	padding-top: 3;
+}
+
+Grid.rut
+{
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+}
+
+GridItem {
+	paddingLeft: 0;
+	horizontalAlign: left;
+/*    	borderStyle: solid;
+	borderThickness: 5;    */
+}
+
+GridItem.detalleVeh {
+	paddingLeft: 10;
+	paddingRight: 10;	
+}
+
+Label.tareas
+{
+	fontWeight: bold;
+	fontSize: 10;
+	textAlign: left;
+	bottom: 0;
+		
+}
+
+ModuleLoader
+{
+	horizontal-center: 0;
+	vertical-center: 0;
+	paddingBottom: 5;
+	paddingLeft: 5;
+	paddingRight: 5;
+	paddingTop: 5;
+}
+
+.glassPods {
+    borderStyle: applicationControlBar;
+	fillColors: #FFFFFF, #FFFFFF;
+	fillAlphas: 0, 0.25;
+	highlightAlphas: 0, 0;
+	backgroundColor: #ffffff;
+	backgroundAlpha: .2;
+	borderThickness: 0;
+	dropShadowEnabled: true;
+	cornerRadius: 8;
+	paddingRight: 0;
+	paddingLeft: 0;
+	paddingTop: 0;
+	paddingBottom: 0;
+}
+
+.glassPanel {
+/* 	backgroundSize: "100%";
+	backgroundImage: Embed(source="../assets/header.swf#glassHeader"); */
+	paddingTop: 5;
+	paddingLeft: 10;
+}
+
+.glassLabels {
+	color: #FFFFFF;
+	fontSize: 12;
+	fontWeight: bold;
+	paddingLeft: 0;
+	paddingTop: 0;
+	fontFamily: Myriad;
+}
+
+
+@font-face {
+    src: url("../fonts/MyriadWebPro.ttf") ;
+    fontFamily: Myriad;
+    unicodeRange:
+           U+0041-U+005A, /* Upper-Case [A..Z] */
+           U+0061-U+007A, /* Lower-Case a-z */
+           U+0030-U+0039, /* Numbers [0..9] */
+           U+002E-U+002E; /* Period [.] */
+}
+
+@font-face {
+    src: url("../fonts/MyriadWebPro-Bold.ttf") ;
+    fontFamily: Myriad;
+    fontWeight: bold;
+    unicodeRange:
+           U+0041-U+005A; /* Upper-Case [A..Z] */
+}
+
+/* DataGrid {
+   backgroundAlpha: 0;
+   horizontalGridLines: false;
+   verticalGridLines: true;
+   borderThickness: 1;
+} */
+
+.VScrollBar {
+  downArrowUpSkin:
+    Embed(source="../assets/downArrow.png");
+
+  downArrowOverSkin:
+    Embed(source="../assets/downArrow.png");
+  downArrowDownSkin:
+    Embed(source="../assets/downArrow.png");
+  upArrowUpSkin:
+    Embed(source="../assets/upArrow.png");
+  upArrowOverSkin:
+    Embed(source="../assets/upArrow.png");
+  upArrowDownSkin:
+    Embed(source="../assets/upArrow.png");
+  thumbDownSkin:
+    Embed(source="../assets/thumb.png", scaleGridLeft="7", scaleGridTop="5",
+        scaleGridRight="8", scaleGridBottom="7");
+  thumbUpSkin:
+    Embed(source="../assets/thumb.png", scaleGridLeft="7", scaleGridTop="5",
+        scaleGridRight="8", scaleGridBottom="7");        
+  thumbOverSkin:
+    Embed(source="../assets/thumb.png", scaleGridLeft="7", scaleGridTop="5",
+        scaleGridRight="8", scaleGridBottom="7");      
+  trackSkin:
+    Embed(source="../assets/scrolltrack.png", scaleGridLeft="7",
+        scaleGridTop="4", scaleGridRight="8", scaleGridBottom="6");      
+}
+
+Label.ingresarVeh
+{
+	fontSize: 12;
+	fontWeight: bold;
+	paddingLeft: 3;
+}
+FormItem.label
+{
+	fontWeight: bold;
+}
+
+.Roles {
+	width: "100%";
+	height: "100%";	
+}
+VBox.genReportes
+{
+	paddingBottom: 10;
+	paddingLeft: 10;
+	paddingRight: 10;
+	paddingTop: 10;
+}
+HBox.button
+{
+	horizontalAlign: right;
+	paddingRight: 15;
+}
+
+.myEntryStyle {
+	fillAlphas: 1, 1;
+	fillColors: #ff0000, #990000;
+	timeStyleName: "myTimeStyle";
+	color: #000000;
+	width: "100%";
+}
+
+.myTimeStyle {
+	fontSize: 9;
+	fontWeight: bold;
+	color: #ffff00;
+}
+
+Label.lbDia {
+	fontWeight: bold;
+	fontSize: 20;
+
+}
+
+LinkButton
+{
+	paddingBottom: 0;
+	paddingLeft: 1;
+	paddingRight: 1;
+	paddingTop: 0;
+	leading: 0;
+	cornerRadius: 3;
+}
+Accordion
+{
+	cornerRadius: 0;
+	headerStyleName: accordionHeader;
+}
+VScrollBar {
+   fillColors: #e0ffff, #000000, #666666, #ffffff;
+   trackColors: #94999b, #000000;
+   themeColor: #ffffff;
+   borderColor: #000000;
+}

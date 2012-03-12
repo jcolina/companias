@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute"
+	width="100%" height="100%"
+	creationComplete="initMod()">
+	
+	<mx:Script source="libModRepRanking2.as"/>
+	
+  	<!--Efectos-->
+	    <mx:SolidColor id="chartRed" color="red"/>
+	    <mx:SolidColor id="chartLightGrey" color="0xb8bbbc"/>
+	    
+		<mx:SeriesInterpolate id="seriesInterpolate" duration="1000" />
+	<!--*******-->
+	
+	<mx:Canvas width="100%" height="98%" verticalCenter="0" horizontalCenter="0" backgroundColor="#ffffff" borderStyle="solid" id="cnvContenedor">
+		<mx:VBox width="100%" height="100%">		
+			<mx:ApplicationControlBar dock="true" width="100%">
+				<mx:Canvas width="100%" height="100%">
+					<mx:HBox verticalCenter="0">
+						<mx:LinkButton id="lnkExcel" click="graficoExcel()" toolTip="{IdiomaApp.getText('mod_rep_ranking_tool_exp_excel')}" label="{IdiomaApp.getText('mod_rep_ranking_tool_exp_excel')}" verticalCenter="0">
+							<mx:icon>@Embed(source='../../../assets/excel.png')</mx:icon>
+						</mx:LinkButton>
+						<mx:LinkButton id="lnkImagen" click="graficoToImage()" toolTip="{IdiomaApp.getText('mod_rep_ranking_tool_exp_img')}" label="{IdiomaApp.getText('mod_rep_ranking_tool_exp_img')}" verticalCenter="0">
+							<mx:icon>@Embed(source='../../../assets/chart.png')</mx:icon>
+						</mx:LinkButton>
+					</mx:HBox>		
+				</mx:Canvas>
+				<mx:Spacer width="100%"/>		
+				<mx:Legend id="leyenda" dataProvider="{myChart}"/>				
+			</mx:ApplicationControlBar>
+			<mx:Canvas width="100%" height="42">
+				<mx:Text x="19.5" y="10" styleName="DescripcionGraficos" text="{IdiomaApp.getText('mod_rep_ranking_text')}" width="100%"/>
+			</mx:Canvas>			
+			<mx:Canvas id="chartContainer" width="100%" height="100%">
+				<mx:BarChart id="myChart" 
+					height="100%" 
+					width="98%"
+					showDataTips="true"
+					dataTipFunction="chartDataTipFunction"
+					styleName="diagonal">
+					<mx:backgroundElements>
+			            <mx:GridLines id="gridLines"
+			                    direction="both"
+			                    verticalTickAligned="false">
+			                <mx:verticalStroke>
+			                    <mx:Stroke color="haloSilver"
+			                            weight="0"
+			                            alpha="1.0" />
+			                </mx:verticalStroke>			                
+			                <mx:horizontalStroke>			               
+			                    <!-- Set alpha to 0 so stroke isn't visible. -->			                
+			                    <mx:Stroke color="white"
+			                            weight="0"
+			                            alpha="0.0" />
+			                </mx:horizontalStroke>
+			                <mx:horizontalFill>
+			                    <mx:SolidColor color="haloSilver"
+			                            alpha="0.1" />
+			                </mx:horizontalFill>			               
+			            </mx:GridLines>
+			        </mx:backgroundElements>	
+			        
+					<mx:verticalAxis>
+			        	<mx:CategoryAxis 
+							categoryField="Detalle" 
+							title="{IdiomaApp.getText('mod_rep_ranking_title_local')}" 
+							id="caMyChart"/>
+					</mx:verticalAxis>		
+					       
+			         <mx:horizontalAxis>
+			         	<mx:LinearAxis 
+			         		id="linearAxis"
+			         		interval="1" 
+							baseAtZero="false"							
+							title="{IdiomaApp.getText('mod_rep_ranking_title_hora')}" 
+							minimum="0"/>      
+		            </mx:horizontalAxis>
+		            
+		            <mx:verticalAxisRenderers>
+		        		<mx:AxisRenderer
+	            			labelRotation="-45"
+	            			axis="{caMyChart}"/>
+		        	</mx:verticalAxisRenderers>
+		        	
+		    		<mx:series>
+						<mx:BarSeries 
+							id="barCia"
+							displayName="{IdiomaApp.getText('mod_rep_ranking_prom_cia')}" 
+							xField="TiempoCia"
+							yField="Detalle"
+							fill="{chartRed}"
+							styleName="totalArriba"
+							showDataEffect="seriesInterpolate"/>
+							<mx:BarSeries 
+							displayName="{IdiomaApp.getText('mod_rep_ranking_prom_cia_ot')}" 
+							xField="TiempoOtraCia"
+							yField="Detalle"
+							fill="{chartLightGrey}"
+							styleName="totalArriba"
+							showDataEffect="seriesInterpolate"/>
+					</mx:series>
+				</mx:BarChart>
+			</mx:Canvas>
+		</mx:VBox>	
+	</mx:Canvas>	
+</mx:Module>

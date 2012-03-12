@@ -1,0 +1,72 @@
+<data>
+<!--URL Servicios-->
+<urlServer>http://192.168.1.161/dataServices/services/</urlServer>
+<urlServerWsas>http://192.168.1.161/wsas/services/</urlServerWsas>
+
+<!--URL app-->
+<urlSoporte>https://controltaller.zendesk.com/account/dropboxes/20021632?v=2.1</urlSoporte>
+<urlAplicacion>http://192.168.1.161/compania/controltaller.html</urlAplicacion>
+<urlServerLotus>http://192.168.1.161/domino/</urlServerLotus>
+<urlServerAlfresco>http://192.168.1.161/alfresco/service/</urlServerAlfresco>
+
+<!--Users-->
+<UserName>DtsFxUser</UserName>
+<UserPass>2011.DtsFx.I2K</UserPass>
+
+<alfUserName>TallerAlfrescoAdmin</alfUserName>
+<alfUserPass>2011.Alf.I2k.wsfx.,</alfUserPass>
+
+<!--Transporte-->
+<transport>HTTP</transport>
+
+<!--EndPoint-->
+<dataServicesEndPoint>.SOAP11Endpoint</dataServicesEndPoint>
+<mashupEndPoint>HttpSoap11Endpoint/</mashupEndPoint>
+<wsasEndPoint>HttpSoap11Endpoint/</wsasEndPoint>
+
+<!--Google Analytics-->
+<UA>UA-9792444-9</UA>
+<debug>false</debug>
+<enabled>false</enabled>
+
+<!--Nombre Servicios-->
+<service name="alfrescoLogin">api/login</service>
+<service name="alfrescoListDocument">controltaller/fileList</service>
+<service name="alfrescoAddDocument">controltaller/cargaArchivo</service>
+<service name="EmailLotus">Correos/EnvioCorreos.nsf/SendEmailWS?wsdl</service>
+<service name="MailReg">admin/RegistroMail?wsdl</service>
+<service name="MailAgenda">QmailAgenda?wsdl</service>
+<service name="Login">Login?wsdl</service>
+<service name="ListaEstados">ListaEstados?wsdl</service>
+<service name="ListaTalleres">ListaTalleres?wsdl</service>
+<service name="ListadoLocales">ListaLocales?wsdl</service>
+<service name="ListadoVehiculos">GridLLcia?wsdl</service>
+<service name="PatenteCia">Vpatente?wsdl</service>
+<service name="Persona">ContactoTaller?wsdl</service>
+<service name="ListaTareas">Listado_Parametros?wsdl</service>
+<service name="SearchRut">BusquedaPersona?wsdl</service>
+<service name="UpdateInfo">actualizainfo?wsdl</service>
+<service name="ContactoTaller">ContactoTaller?wsdl</service>
+<service name="MailMSh">admin/envioMail?wsdl</service>
+<service name="Comentario">IngComentario?wsdl</service>
+<service name="BitacoraMails">RegistroMail?wsdl</service>
+<service name="Bitacora">Historico?wsdl</service>
+<service name="Contacto">Contacto?wsdl</service>
+<service name="ListadoTareas">verTareas?wsdl</service>
+<service name="DetalleAgenda">AgendaCia?wsdl</service>
+<service name="ListaParamGraf">Listado_Parametros?wsdl</service>
+<service name="RepVeh">GraficoEstadosVehiculos?wsdl</service>
+<service name="Reporte">Reportes?wsdl</service>
+<service name="RepFecha">GraficoFechaEntrega?wsdl</service>
+<service name="AgendaCia">AgendaCia?wsdl</service>
+<service name="DatosEmail">Qmail?wsdl</service>
+
+<!--Documentos-->
+<service name="Documentos">Docs?wsdl</service>
+
+<!--Factura-->
+<service name="Factura">Factura?wsdl</service>
+<!--Liquidador-->
+<service name="Liquidador2">Liquidador2?wsdl</service>
+</data>
+

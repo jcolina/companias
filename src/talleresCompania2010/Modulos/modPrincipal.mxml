@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+	width="100%" height="100%" 
+	preinitialize="initMod()" verticalScrollPolicy="off"
+	xmlns:comp="talleresCompania2010.util.ComboboxFilter.*"	>
+	<mx:Script>
+		<![CDATA[
+			import mx.core.Application;
+			import mx.effects.Resize;
+		]]>
+	</mx:Script>
+
+	<mx:WipeUp id="WipeOut" duration="3000" />
+
+	<mx:Script source="libModPrincipal.as" />
+
+	
+	
+	<mx:VBox width="100%" height="100%">
+		<mx:ApplicationControlBar width="100%" top="30" dock="true">
+			<mx:HBox width="100%" height="100%">
+				<mx:Grid>
+					<mx:GridRow height="100%">
+						<mx:GridItem height="100%">
+							<mx:Label text="{IdiomaApp.getText('mod_principal_lbl_taller')}" fontWeight="bold" fontSize="11" color="#040404"/>
+						</mx:GridItem>
+						<mx:GridItem height="100%">
+							<mx:HBox width="100%">
+								<mx:ComboBox id="cbTaller"   prompt="{IdiomaApp.getText('general_prompt')}"  change="solLocales()" maxWidth="285"/>
+								<comp:ComboboxFilter combobox="{cbTaller}"/>
+							</mx:HBox>
+						</mx:GridItem>
+					</mx:GridRow>
+					<mx:GridRow height="100%">
+						<mx:GridItem height="100%">
+							<mx:Label text="{IdiomaApp.getText('mod_principal_lbl_locales')}" fontWeight="bold" fontSize="11" color="#040404"/>
+						</mx:GridItem>
+						<mx:GridItem height="100%">
+							<mx:ComboBox id="cbLocales" change="cargarGrilla()" maxWidth="300"/>
+						</mx:GridItem>
+					</mx:GridRow>
+				</mx:Grid>
+				<mx:Grid height="100%">
+					<mx:GridRow height="100%">
+						<mx:GridItem height="100%">
+							<mx:LinkButton click="updateGrilla(event)" enabled="true" id="lnkUpdate">
+								<mx:icon>@Embed(source='../../assets/update.png')</mx:icon>
+							</mx:LinkButton>
+							<mx:LinkButton enabled="true" id="lnkRed" click="cargarGrillaPorFiltros(event)" label="0 Veh."
+								toolTip="{IdiomaApp.getText('mod_principal_tool_auto')}">
+								<mx:icon>@Embed(source='../../assets/warningRed.png')</mx:icon>
+							</mx:LinkButton>
+							<mx:LinkButton enabled="true" id="lnkYellow" click="cargarGrillaPorFiltros(event)" label="0 Veh."
+								toolTip="{IdiomaApp.getText('mod_principal_tool_mov')}">
+								<mx:icon>@Embed(source='../../assets/warningYellow.png')</mx:icon>
+							</mx:LinkButton>
+							<mx:LinkButton enabled="true" id="lnkBlue" click="cargarGrillaPorFiltros(event)" label="0 Veh."
+								toolTip="{IdiomaApp.getText('mod_principal_tool_pen')}">
+								<mx:icon>@Embed(source='../../assets/warningBlue.png')</mx:icon>
+							</mx:LinkButton>	
+							<mx:LinkButton enabled="true" id="lnkGray" click="cargarGrillaPorFiltros(event) " label="0 Veh."
+								toolTip="{IdiomaApp.getText('mod_principal_tool_con')}">
+								<mx:icon>@Embed(source='../../assets/warningGray.png')</mx:icon>
+							</mx:LinkButton>
+							
+												
+						</mx:GridItem>
+					</mx:GridRow>	
+					<mx:GridRow width="100%" height="100%">						
+						<mx:GridItem height="100%">
+							<!--<mx:Spacer height="60" width="0"/>-->
+							<mx:LinkButton id="lnkExcel" click="exportToExcel()"
+								toolTip="{IdiomaApp.getText('mod_rep_prom_notiticaciones_tool_exportar_excel')}">
+								<mx:icon>@Embed(source='../../assets/excel.png')</mx:icon>
+							</mx:LinkButton>
+							<mx:LinkButton enabled="true" id="lnkPendRepuesto" click="cargarGrillaPorFiltros(event)" label="0 Veh."
+								toolTip="{IdiomaApp.getText('mod_principal_tool_pendiente')}">
+								<mx:icon>@Embed(source='../../assets/PendRepu/clock_red.png')</mx:icon>
+							</mx:LinkButton>
+							<mx:LinkButton enabled="true" id="lnkPerdidaTotal" click="cargarGrillaPorFiltros(event)" label="0 Veh."
+								toolTip="{IdiomaApp.getText('mod_principal_tool_perdida')}">
+								<mx:icon>@Embed(source='../../assets/perdidaTotal.gif')</mx:icon>
+							</mx:LinkButton>	
+							<mx:Label id="capacidadlb"  fontWeight="bold" fontSize="10"/>							
+						</mx:GridItem>
+					</mx:GridRow>
+				</mx:Grid>
+				<mx:Grid>
+					<mx:GridRow height="100%">
+						<mx:GridItem height="100%">
+							<mx:Label text="{IdiomaApp.getText('general_patente')}" fontWeight="bold" fontSize="11" color="#040404"/>
+						</mx:GridItem>
+						<mx:GridItem height="100%">
+							<mx:TextInput id="txPatente" color="#010101" enter="cargarGrillaPorPatente()" width="70"/>
+							<mx:LinkButton enabled="true" id="btBuscar" click="cargarGrillaPorPatente()">
+								<mx:icon>@Embed(source='../../assets/zoom.png')</mx:icon>
+							</mx:LinkButton>
+						</mx:GridItem>
+					</mx:GridRow>
+					<mx:GridRow height="100%">
+						<mx:GridItem height="100%">
+							<mx:Label text="{IdiomaApp.getText('general_siniestro')}" id="lbSiniestro" fontWeight="bold" fontSize="11"/>
+						</mx:GridItem>
+						<mx:GridItem height="100%">
+							<mx:TextInput id="txSiniestro" change="cargarGrillaPorSiniestro()" width="70" fontSize="11" color="#040404" enabled="false"/>
+							<mx:LinkButton enabled="true" id="btBuscarSiniestro" click="cargarGrillaPorSiniestro()" visible="false">
+								<mx:icon>@Embed(source='../../assets/zoom.png')</mx:icon>
+							</mx:LinkButton>
+						</mx:GridItem>
+					</mx:GridRow>
+				</mx:Grid>
+			</mx:HBox>
+		</mx:ApplicationControlBar>
+				
+	    	<mx:Panel title=""
+	        	height="100%" width="100%" layout="horizontal" minHeight="250"
+	        	horizontalScrollPolicy="off" minWidth="500" headerHeight="2">
+					<mx:AdvancedDataGrid id="grillaPrincipal" width="100%" minHeight="100" height="100%" itemClick="clickRow(event)" 
+						variableRowHeight="true" folderClosedIcon="{null}" folderOpenIcon="{null}" styleFunction="colorRows" 
+						disclosureOpenIcon="{null}" disclosureClosedIcon="{null}"
+						itemRenderer="talleresCompania2010.util.ADG.ADGItemRenderCustom" 
+						groupItemRenderer="talleresCompania2010.util.ADG.GroupItemRenderCustom" >
+					
+			        	<mx:columns>
+				        	<mx:AdvancedDataGridColumn id="clmPatente" headerText="{IdiomaApp.getText('general_patente')}" minWidth="50" width="50"/>
+				        	<mx:AdvancedDataGridColumn id="clmPendRepu" headerText="{IdiomaApp.getText('general_pen')}" minWidth="20" width="20" itemRenderer="talleresCompania2010.Componentes.comIconPerdidaTotal" />
+				          	<mx:AdvancedDataGridColumn id="clmDocumento" headerText="{IdiomaApp.getText('general_doc')}" minWidth="20" width="20" itemRenderer="talleresCompania2010.Componentes.comIconDocumento"/>
+				          	<mx:AdvancedDataGridColumn id="clmMarca" headerText="{IdiomaApp.getText('general_marca')}" minWidth="50" width="50"/>
+				          	<mx:AdvancedDataGridColumn id="clmModelo" headerText="{IdiomaApp.getText('general_modelo')}" minWidth="55" width="55"/>
+				          	<mx:AdvancedDataGridColumn id="clmSiniestro" headerText="{IdiomaApp.getText('general_siniestro')}" minWidth="60" width="60"/>
+				          	<mx:AdvancedDataGridColumn id="clmNomContacto" headerText="{IdiomaApp.getText('general_nom_contacto')}" minWidth="80" width="80"/>
+				          	<mx:AdvancedDataGridColumn id="clmFIngreso" headerText="{IdiomaApp.getText('general_fecha_ingreso')}" minWidth="60" width="60" dataField="FechaIngreso" sortCompareFunction="OrdenaFechaIngreso"/>
+							<mx:AdvancedDataGridColumn id="clmFEntrega" headerText="{IdiomaApp.getText('general_fecha_entrega')}" minWidth="60" width="60" dataField="FechaEntrega" sortCompareFunction="OrdenaFechaEntrega"/>
+				          	<mx:AdvancedDataGridColumn id="clmEstado" headerText="{IdiomaApp.getText('general_observaciones')}" minWidth="60" width="60"/>
+				          	<mx:AdvancedDataGridColumn id="clmEtapa" headerText="{IdiomaApp.getText('general_etapa')}" minWidth="55" width="60"/>
+				          	<!-- modificado -->
+				          	<mx:AdvancedDataGridColumn id="clmRecepcionista" headerText="{IdiomaApp.getText('general_recepcionista')}" minWidth="55" width="60"/>
+			         	</mx:columns>
+		        	</mx:AdvancedDataGrid>
+		        </mx:Panel>		    
+		</mx:VBox>
+	
+	<mx:DateFormatter id="formatDate" formatString="EEE DD-MM-YY" />
+	
+</mx:Module>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" 
+	width="177" height="82" 
+	styleName="canDayCellBase">
+
+	<mx:Script>
+        <![CDATA[
+        	import mx.controls.Alert;
+            import flash.events.MouseEvent;
+
+            private const CELESTE_COLOR:int = 0xa0e9f9;
+            private const WHITE_COLOR:int = 0xffffff;
+
+            private function onMouseOver():void {            	
+            	this.setStyle("backgroundColor", CELESTE_COLOR);
+            	this.txtDesc.setStyle("backgroundColor", CELESTE_COLOR);
+            }
+
+            private function onMouseOut():void {
+            	this.setStyle("backgroundColor", WHITE_COLOR);
+            	this.txtDesc.setStyle("backgroundColor", WHITE_COLOR);
+            }
+        ]]>
+    </mx:Script>
+
+	<mx:ApplicationControlBar id="canHeader" x="0" y="-3" height="18" width="100%" styleName="appBarDayCell">
+		<mx:Label width="90" height="14" id="lblDate" color="#FFFFFF" fontWeight="bold" styleName="lblHours"/>
+	</mx:ApplicationControlBar>
+	<mx:TextArea x="3" y="20" width="170" height="60" editable="false" selectable="false" id="txtDesc" styleName="txtArea" mouseOver="onMouseOver()" mouseOut="onMouseOut()"/>
+</mx:Canvas>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+	usePreloader="true"
+	layout="absolute"
+	preinitialize="initApp()"
+	creationComplete="setUrl()"
+	pageTitle="Taller Compañía"
+ 	width="100%"
+	height="100%" backgroundGradientAlphas="[1.0, 1.0]" backgroundGradientColors="[#FFFFFF, #00FF00]">
+	<mx:Script>
+		<![CDATA[
+			//import talleresCompania2010.util.IdiomaApp;
+			import talleresCompania2010.util.PopUpAyuda;
+		]]>
+	</mx:Script>
+	
+	<mx:Style source="/Css/styleApplication.css"/>	
+	<mx:Script source="libTalleresCompania.as"/>
+  
+	<mx:Resize id="agrandaGrilla" target="{cvCentral}" widthTo="{cvVehiculos.width - 100}" duration="50"/>
+	<mx:Resize id="achicaGrilla" target="{cvCentral}" widthTo="{cvVehiculos.width / 1.7}" duration="50"/>
+
+	<!--********************  PANTALLA PRINCIPAL  ***********************-->
+	<mx:HDividedBox id="hdPanelSuperior" width="100%" height="48" borderStyle="none" visible="false" top="0">
+		<mx:Canvas id="cvMenuBar" height="100%">
+			<mx:HBox height="100%" right="0">
+				<mx:Canvas top="3">
+					<mx:Label id="infolb" />
+				</mx:Canvas>
+				<mx:VBox id="boxOpc" height="100%" horizontalAlign="left" backgroundColor="white" backgroundAlpha="0.3" paddingLeft="2" paddingRight="2">
+					<mx:VBox minWidth="200">
+						<mx:LinkButton id="lnkopciones" maxWidth="260" click="mostrarDialogo()">
+							<mx:icon>@Embed(source='assets/UserLogin.png')</mx:icon>
+						</mx:LinkButton>
+						<mx:Label id="lbTaller" maxWidth="260" fontWeight="bold" paddingLeft="18"/>
+					</mx:VBox>
+				</mx:VBox>
+				<mx:Canvas height="100%">
+					<mx:LinkButton enabled="true" id="lnklogout" click="cerrar_sesion(event)" toolTip="{IdiomaAppBrowser.getText('aplication_finaliza_tool')}" width="22" height="22">
+						<mx:icon>@Embed(source='assets/logout.png')</mx:icon>						
+					</mx:LinkButton>
+				</mx:Canvas>
+				<mx:Button id="colorCambia" label="Cambiar color" click="cambiaColor();" />				
+
+			</mx:HBox>			
+		</mx:Canvas>
+	</mx:HDividedBox>
+	<mx:HDividedBox id="hdPanel" width="100%" bottom="0" visible="false" paddingTop="1" top="23">
+		<mx:VBox width="100%" height="100%">	
+			<mx:TabNavigator width="100%" height="100%" change="seleccionTab(event)" paddingTop="0" fontFamily="Verdana" fontSize="10" fontWeight="normal" id="tabNavi"> 
+				<mx:Canvas id="cvVehiculos"  height="100%" width="100%">
+					<mx:HDividedBox width="100%" height="100%">
+						<mx:Canvas id="cvCentral" width="74%" height="100%" mouseOver="{agrandaGrilla.play()}"  > 
+							<mx:ModuleLoader id="mlPrincipal" width="100%" height="100%" horizontalCenter="0" y="30" />
+						</mx:Canvas>
+						<mx:Canvas id="cvDerecho" width="26%" height="100%"  mouseOver="{achicaGrilla.play()}">
+							<mx:ModuleLoader id="mlDerecho" width="100%" height="100%" horizontalScrollPolicy="off" y="30"/>
+						</mx:Canvas>
+					</mx:HDividedBox>	
+				</mx:Canvas>
+				<mx:Canvas id="cvAgenda"  width="100%" height="100%">
+						<mx:ModuleLoader id="mlAgenda" width="100%" height="100%" horizontalScrollPolicy="off"/>
+				</mx:Canvas>
+				<mx:Canvas id="cvTabReporte"  width="100%" height="100%">
+					<mx:VBox width="100%" height="100%">		
+						<mx:VDividedBox width="100%" height="65">
+							<mx:ApplicationControlBar width="100%" height="65">
+								<!--<head:GlassHeaders headerTitle="VEHICULOS" id="myTitleReporte" width="91" height="32"/>-->			
+								<mx:ModuleLoader id="mlDerechoReporte" width="100%" height="100%" horizontalScrollPolicy="off"/>
+							</mx:ApplicationControlBar>
+						</mx:VDividedBox>
+						<mx:VDividedBox width="100%" height="100%">
+							<mx:Canvas id="cvCentralReporte" width="100%" height="100%" styleName="glassPods" right="496" y="10">
+								<mx:ModuleLoader id="mlReporte" width="100%" height="100%" x="-10" y="10"/>			
+							</mx:Canvas>
+						</mx:VDividedBox>			
+					</mx:VBox>
+				</mx:Canvas>
+				<mx:Canvas id="cvTabFactura"  width="100%" height="100%">
+					<mx:HDividedBox width="100%" height="100%" >
+						<mx:Canvas id="cvCentralFactura" width="74%" height="100%"> 
+							<mx:VBox width="100%" height="100%">
+								<mx:Canvas width="100%" height="90">
+									<mx:ApplicationControlBar width="100%" height="100%">
+										<mx:ModuleLoader id="mlFacturaOpciones" width="100%" height="100%" horizontalScrollPolicy="off"/>
+									</mx:ApplicationControlBar>
+								</mx:Canvas>
+								<mx:Canvas width="100%" height="100%" styleName="glassPods" right="496" y="10">
+									<mx:ModuleLoader id="mlFacturaPrincipal" width="100%" height="100%"/>		
+								</mx:Canvas>
+							</mx:VBox>			
+						</mx:Canvas>
+						<mx:Canvas id="cvDerechoFactura"  height="100%" width="23%">
+							<mx:ModuleLoader id="mlFacturaDerecho" width="100%" height="100%" horizontalScrollPolicy="off"/>
+						</mx:Canvas>
+					</mx:HDividedBox>
+				</mx:Canvas>
+				<mx:Canvas id="cvLiquidador"  width="100%" height="100%">
+						<mx:ModuleLoader id="mlLiquidadorPrincipal" width="100%" height="100%" horizontalScrollPolicy="off"/>
+				</mx:Canvas>
+				<mx:Canvas id="cvPrueba"  width="100%" height="100%">
+						
+				</mx:Canvas>
+				
+				
+			</mx:TabNavigator>
+		<mx:HBox id="myHboxSoporte" left="5">
+			<mx:Canvas width="100%" height="100%">
+				<mx:Label text="{IdiomaAppBrowser.getText('mod_login_ayuda')}" fontWeight="bold" paddingRight="0" color="#ffffff" bottom="0"/>
+			</mx:Canvas>			
+			<mx:LinkButton id="lnkSoporte" label="{IdiomaAppBrowser.getText('mod_login_ayuda_aqui')}" click="{PopUpAyuda.show()}" color="#ffffff" fontSize="13"/>				
+		</mx:HBox>		
+		</mx:VBox>
+	</mx:HDividedBox>
+
+	<mx:ModuleLoader id="mlModLogin" url="talleresCompania2010/Modulos/modLogin.swf" horizontalCenter="0" verticalCenter="0" />	
+
+</mx:Application>

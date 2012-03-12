@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" 
+	initialize="initMod()" 
+	width="500" height="400">
+	
+	<mx:Script source="libModLogin.as" />
+
+	<mx:VBox width="100%" height="100%">
+		<mx:Canvas width="100%">
+			<mx:Panel id="panel" width="389" height="294" layout="absolute" color="#000000" horizontalCenter="0" verticalCenter="0">
+				<mx:Label id="lblUsuario"  fontWeight="bold" color="#000000" x="26" y="54"/>
+				<mx:Label id="lblPass"  fontWeight="bold" color="#000000" x="26" y="112"/>
+				<mx:TextInput id="txlogin" name="Usuario" maxChars="50" x="26" y="75" tabIndex="1" enter="sendLogin()" width="314"/>
+				<mx:TextInput id="txpassword" name="Password" displayAsPassword="true" maxChars="50" tabIndex="2"  enter="sendLogin()" width="314" x="26" y="131"/>
+				<mx:Button id="btnLogin" x="238" y="169"  click="sendLogin()" color="#000000" tabIndex="3" styleName="defaultButton" width="102" height="25"/>
+				<mx:CheckBox x="26" y="171" fontWeight="bold" id="chkStored"/>
+			</mx:Panel>
+		</mx:Canvas>
+		<mx:Spacer height="30"/>
+		<mx:Text id="lblAyuda" width="100%"  color="#ffffff" fontSize="14" fontWeight="bold" mouseMove="onMouseOver()" mouseOut="onMouseOut()"
+			buttonMode="true" useHandCursor="true" mouseChildren="false" click="abrirReporteError()"/>
+	</mx:VBox>
+	
+	<!-- Validadores -->
+	<mx:Validator id="validUser" required="true" source="{txlogin}" property="text" />
+	<mx:Validator id="validPass" required="true" source="{txpassword}" property="text"/>
+</mx:Module>

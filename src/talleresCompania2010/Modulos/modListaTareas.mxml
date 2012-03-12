@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="100%" height="100%" preinitialize="initMod()" creationCompleteEffect="{fadeIn}">
+
+<mx:Script source="libModListaTareas.as" />
+
+	<mx:Fade id="fadeIn" duration="1000" alphaFrom="0.0" alphaTo="1.0"/>
+	<mx:HTTPService id="serviceListaTareas" method="POST" requestTimeout="500" showBusyCursor="true"/>
+	<mx:HTTPService id="serviceUpdateTareas" method="POST" requestTimeout="500" showBusyCursor="true"/>
+	
+	<mx:Canvas id="cvGrid" width="100%" height="100%" styleName="listas"/>
+
+</mx:Module>

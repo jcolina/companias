@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml"   horizontalScrollPolicy="off" verticalScrollPolicy="auto">
+	<mx:Canvas id="cvContenedor" >
+		
+	
+	<mx:Script source="libComPost.as"/>		
+		<mx:Label text="{IdiomaApp.getText('com_post_usuario')}" fontWeight="bold"  left="33" top="13" width="52"/>			
+		<mx:Label text="{IdiomaApp.getText('com_post_comentario')}" fontWeight="bold" left="2" top="29" width="85"/>
+	 	<mx:Text text="{data.comentario}" id="comentario" left="1" top="41" textAlign="left" width="250" fontStyle="italic" fontSize="11" /> 		
+		<mx:Text text="{data.usuario}" id="user" left="79" top="13"/>
+		<mx:Label text="{IdiomaApp.getText('com_post_fecha')}" fontWeight="bold" left="33" top="0" width="52"/>
+		<mx:Text text="{data.fecha}" id="fecha" left="79" top="0" textAlign="left" />		
+		<mx:Image left="2" top="2" width="32" height="29" source="@Embed(source='assets/user.png')"/>
+</mx:Canvas>
+</mx:Canvas>

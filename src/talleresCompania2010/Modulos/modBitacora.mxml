@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+	width="100%" height="100%" 
+	preinitialize="initMod()">
+
+	<mx:Script source="libModBitacora.as" />
+	
+	<mx:Canvas id="cvGrilla" width="100%" height="100%" styleName="listas" verticalScrollPolicy="auto">
+		<mx:VBox width="100%" height="100%" >
+		<mx:List id="myList" width="100%" height="100%"  
+				variableRowHeight="true" wordWrap="true" 
+				 color="black" fontSize="9"  
+				 alternatingItemColors="[0xE0FFFF, 0xFFFFFF]"  itemRenderer="talleresCompania2010.Modulos.Componentes.comPost" maxHeight="260"	 >
+					
+			</mx:List>
+			<mx:Canvas id="cvAddComentario" width="100%" height="105" bottom="0">
+				<mx:TextArea id="txAreaComment" width="90%" height="50%" horizontalCenter="0" top="23" maxChars="255"/>
+				<mx:Button label="{IdiomaApp.getText('mod_bitacora_acep')}" bottom="3" right="30"  click="addComment(event)"/>
+				<mx:Label text="{IdiomaApp.getText('mod_bitacora_comentario')}" left="10" top="2" fontWeight="bold" fontSize="10"/>
+				<mx:CheckBox top="2" right="20" label="{IdiomaApp.getText('mod_bitacora_notificar')}" selected="true" id="checkNotificar"/>
+			</mx:Canvas>
+		</mx:VBox>		
+	</mx:Canvas>
+	<mx:DateFormatter id="formatDate" formatString="EEE DD-MM-YY" />
+	 <mx:DateFormatter id="formatfecha" formatString="DD-MM-YYYY , L:NN:SS"/> 
+	 <mx:DateFormatter id="formatFecResta" formatString="YYYY-MM-DD"/> 		
+</mx:Module>

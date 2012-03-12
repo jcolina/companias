@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" 
+	width="100%" height="100%"
+	initialize="initCom()">
+	
+	<mx:Script source="libComVisorImagen.as" />
+	<mx:Style source="VisorImagenes/Css/style.css" />
+	
+	<mx:ViewStack id="viewPrincipal" width="100%" height="100%" creationPolicy="all">
+		<mx:ModuleLoader horizontalAlign="center" verticalAlign="middle" url="talleresCompania2010/Modulos/Documentos/Componentes/VisorImagenes/modLoadImage.swf" id="viewLoadImage"/>
+		<mx:ModuleLoader horizontalAlign="center" verticalAlign="middle" url="talleresCompania2010/Modulos/Documentos/Componentes/VisorImagenes/modSinImagenes.swf" id="viewSinImagen"/>
+		<mx:ModuleLoader horizontalAlign="center" verticalAlign="middle" url="talleresCompania2010/Modulos/Documentos/Componentes/VisorImagenes/modImageView.swf" id="viewImagen"/>
+		<mx:Canvas id="viewDefault" width="100%" height="100%"/>
+	</mx:ViewStack>
+</mx:Canvas>

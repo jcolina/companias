@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml"
+	horizontalScrollPolicy="off" verticalScrollPolicy="off">
+	
+	<mx:Script >
+		<![CDATA[
+			import mx.core.Application;
+			import mx.collections.ArrayCollection;
+			
+			private function deleteItem():void{
+				var listaFactura:ArrayCollection = Application.application.mlFacturaDerecho.child.mlFactura.child.dataListaFactura;
+				
+				for(var i:int = 0; i < listaFactura.length; i++){
+					if(listaFactura[i].IDFactura == data.IDFactura){
+						listaFactura.removeItemAt(i);
+					}
+				}
+			}
+		]]>
+	</mx:Script>
+	
+	<mx:Button height="18" left="3" toolTip="Eliminar" icon="@Embed(source='../../../../assets/delete.png')" click="deleteItem()"/>
+</mx:Canvas>

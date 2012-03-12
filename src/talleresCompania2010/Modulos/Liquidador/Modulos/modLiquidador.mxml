@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+	width="100%" height="100%" 
+	initialize="initMod()" creationPolicy="all" 
+	backgroundColor="#88BCC7" backgroundAlpha="1.0">
+	
+	<mx:Script source="libModLiquidador.as"/>
+
+	<mx:Move id="hideEffect"
+    	xTo="-500" />
+    <mx:Move id="showEffect"
+    	yFrom="500" />
+	
+		<mx:VBox width="100%" height="100%">
+		<mx:Panel width="100%" height="90" layout="horizontal"  title="{IdiomaApp.getText('mod_liquidador_title_panel_op')}"  backgroundColor="#D4E3E9" borderColor="#B2DDFF">
+			 <mx:HBox width="100%" height="100%">
+				  <mx:VBox height="100%" width="33%">
+				  		<mx:Button label="{IdiomaApp.getText('mod_liquidador_boton_ingresar')}" click="agregarLiquidador()" id="BtnAgregar"  width="100%" enabled="true" height="100%" fillAlphas="[1.0, 1.0]" fillColors="[#5FBCCD, #FFFFFF, #5FBCCD, #5FBCCD]" fontSize="14"/>		
+				  </mx:VBox >
+				   <mx:VBox height="100%" width="33%">
+				  		<mx:Button label="{IdiomaApp.getText('mod_liquidador_boton_modificar')}" click="modificarLiquidador()" id="BtnModificar" width="100%" enabled="true"   height="100%" fillAlphas="[1.0, 1.0]" fillColors="[#5FBCCD, #FFFFFF, #5FBCCD, #5FBCCD]" fontSize="14"/>			
+				  </mx:VBox>
+				   <mx:VBox height="100%" width="33%">
+				  		<mx:Button label="{IdiomaApp.getText('mod_liquidador_boton_guardar')}" id="BtnCarga" click="guardaCambios()" width="100%"   height="100%" fillAlphas="[1.0, 1.0]" fillColors="[#5FBCCD, #FFFFFF, #5FBCCD, #5FBCCD]" fontSize="14"/>
+				  </mx:VBox>
+			 </mx:HBox>				
+		</mx:Panel>	
+			
+			<mx:Panel  width="100%" height="100%" layout="absolute" title="{IdiomaApp.getText('mod_liquidador_title_lista')}" borderColor="#B2DDFF">
+			<mx:AdvancedDataGrid  id="GridLiquidadores" width="100%" height="100%" doubleClickEnabled="true" doubleClick="DobleClickGrillaModificar()"   y="9.05" x="9.1">
+			<mx:columns>
+				<mx:AdvancedDataGridColumn id="clmRut"  dataField="id_persona" headerText="{IdiomaApp.getText('general_grid_rut')}" minWidth="50" width="50"/>
+			    <mx:AdvancedDataGridColumn id="clmNombre"  dataField="nombre" headerText="{IdiomaApp.getText('general_grid_nombre')}" minWidth="50" width="50"/>
+			    <mx:AdvancedDataGridColumn id="clmApellido"  dataField="apellido" headerText="{IdiomaApp.getText('general_grid_apellido')}" minWidth="50" width="50"/>
+			    <mx:AdvancedDataGridColumn id="clmCelular"   dataField="celular" headerText="{IdiomaApp.getText('general_grid_celular')}" minWidth="50" width="50"/>
+			    <mx:AdvancedDataGridColumn id="clmEmail"  dataField="email" headerText="{IdiomaApp.getText('general_grid_email')}" minWidth="50" width="50"/>
+			    <mx:AdvancedDataGridColumn id="clmFono" dataField="fono" headerText="{IdiomaApp.getText('general_grid_fono')}" minWidth="50" width="50"/>
+			   
+			</mx:columns>		
+			</mx:AdvancedDataGrid>
+			</mx:Panel>
+		</mx:VBox>	
+	
+</mx:Module>

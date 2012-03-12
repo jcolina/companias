@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+	xmlns:com="talleresCompania2010.Modulos.Documentos.Componentes.*" 
+	showCloseButton="true" close="cerrarDialog()" 
+	width="100%" height="100%" 
+	title="{IdiomaApp.getText('mod_up_documentos_title')}" initialize="initMod()">
+
+	<mx:Script source="libModUpDocumentosSolicitud.as" />
+		
+	<mx:HDividedBox width="100%">	
+		<mx:Canvas width="400" height="300">
+			<mx:Panel width="100%" height="100%" title="{IdiomaApp.getText('mod_up_documentos_title_info')}">
+				<mx:Form>
+					<mx:FormItem label="{IdiomaApp.getText('general_tipo')}">
+						<mx:Label id="lblTipo"/>
+					</mx:FormItem>
+					<mx:FormItem label="{IdiomaApp.getText('general_titulo2')}">
+						<mx:TextInput id="txTitulo" name="{IdiomaApp.getText('general_titulo')}"/>
+					</mx:FormItem>
+					<mx:FormItem label="{IdiomaApp.getText('general_etapa')}">
+						<mx:ComboBox id="cboEtapa" name="{IdiomaApp.getText('general_etapa')}" />
+					</mx:FormItem>
+					<mx:FormItem label="{IdiomaApp.getText('general_descripcion')}">
+						<mx:TextArea id="txaDescrip"  width="250" name="{IdiomaApp.getText('general_descripcion')}"/>
+					</mx:FormItem>
+				</mx:Form>
+			</mx:Panel>		
+		</mx:Canvas>
+		<mx:Canvas width="400" height="300" horizontalCenter="0" verticalCenter="0">
+			<com:comUpFileSolicitud id="comUpFileSolicitud"
+				width="100%" height="100%"
+				uploadComplete="sendEmail()"
+				uploadIOError="Alert.show('IO Error in uploading file.', 'Error')" 
+				uploadSecurityError="Alert.show('Security Error in uploading file.', 'Error')"/>
+		</mx:Canvas>
+	</mx:HDividedBox>
+	
+	<!--Validadores-->
+	<mx:StringValidator id="vlTitulo" required="true" requiredFieldError="{IdiomaApp.getText('mod_up_documentos_debe_titulo')}"
+		source="{txTitulo}" property="text" />
+</mx:TitleWindow>

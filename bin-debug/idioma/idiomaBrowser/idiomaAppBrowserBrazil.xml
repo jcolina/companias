@@ -1,0 +1,36 @@
+<data>
+	
+	<application_problamas_carga_archi>Problemas ao carregar arquivos de configuração.</application_problamas_carga_archi>
+	<application_esta_seguro>Deseja realmente sair da aplicação?</application_esta_seguro>
+	<application_lert_title_aviso>Aviso</application_lert_title_aviso>
+	<application_dir_web_incorrecta>Direção de Serviço Web incorreta!</application_dir_web_incorrecta>
+	<application_problema_wsdl>Problema ao carregar WSDL</application_problema_wsdl>
+	<application_campos_requeridos>Campos Requeridos</application_campos_requeridos>
+	
+	<application_title_control>Oficina Companhia</application_title_control>
+	<aplication_finaliza_tool>Finalizar Sessão</aplication_finaliza_tool>
+	<aplication_tab_vehiculo>Veículos</aplication_tab_vehiculo>
+	<aplication_tab_agenda>Agenda</aplication_tab_agenda>
+	<aplication_tab_reportes>Relatórios</aplication_tab_reportes>
+	<aplication_tab_factura>Fatura</aplication_tab_factura>
+	<aplication_tab_liquidador>Perito</aplication_tab_liquidador>
+		<!-- modLogin -->
+	<mod_login_panel_title>Ingresse seus dados</mod_login_panel_title>
+	<mod_login_lbl_usuario>Nome usuário:</mod_login_lbl_usuario>
+	<mod_login_lbl_pass>Senha:</mod_login_lbl_pass>
+	<mod_login_txt_usuario>Usuário</mod_login_txt_usuario>
+	<mod_login_txt_pass>Senha</mod_login_txt_pass>
+	<mod_login_boton_ingresar>Ingressar</mod_login_boton_ingresar>
+	<mod_login_check_recordar>Recordar me neste computador</mod_login_check_recordar>
+	<mod_login_lbl_soporte>Em caso de dúvidas ligue para 56-2-9799153 ou relate problemas com o sistema clicando aqui</mod_login_lbl_soporte>
+	<mod_login_vl_usuario>Ingresse un nome de usuário válido</mod_login_vl_usuario>
+	<mod_login_vl_pass>Ingresse uma senha válida</mod_login_vl_pass>
+	
+	<!-- Login -->
+	<login_login_ws_fault_title>Login</login_login_ws_fault_title>
+	<login_usuario_invalido>Usuário/Senha Inválido</login_usuario_invalido>
+	<login_usuario_no_pertenece>O usuário não pertenece a esta aplicação</login_usuario_no_pertenece>
+	
+
+		
+</data>	

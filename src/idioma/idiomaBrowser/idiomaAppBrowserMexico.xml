@@ -1,0 +1,36 @@
+<data>
+	
+	<application_problamas_carga_archi>Problemas con carga de archivos de configuración.</application_problamas_carga_archi>
+	<application_esta_seguro>¿Está seguro de salir de la Aplicación?</application_esta_seguro>
+	<application_lert_title_aviso>Aviso</application_lert_title_aviso>
+	<application_dir_web_incorrecta>Dirección de Web Service incorrecta!</application_dir_web_incorrecta>
+	<application_problema_wsdl>Problema al cargar WSDL</application_problema_wsdl>
+	<application_campos_requeridos>Campos Requeridos</application_campos_requeridos>
+	
+	<application_title_control>Taller Compañía</application_title_control>
+	<aplication_finaliza_tool>Finalizar Sesión</aplication_finaliza_tool>
+	<aplication_tab_vehiculo>Vehículos</aplication_tab_vehiculo>
+	<aplication_tab_agenda>Agenda</aplication_tab_agenda>
+	<aplication_tab_reportes>Reportes</aplication_tab_reportes>
+	<aplication_tab_factura>Factura</aplication_tab_factura>
+	<aplication_tab_liquidador>Valuador</aplication_tab_liquidador>
+		<!-- modLogin -->
+	<mod_login_panel_title>Ingrese sus datos</mod_login_panel_title>
+	<mod_login_lbl_usuario>Nombre usuario:</mod_login_lbl_usuario>
+	<mod_login_lbl_pass>Contraseña:</mod_login_lbl_pass>
+	<mod_login_txt_usuario>Usuario</mod_login_txt_usuario>
+	<mod_login_txt_pass>Password</mod_login_txt_pass>
+	<mod_login_boton_ingresar>Ingresar</mod_login_boton_ingresar>
+	<mod_login_check_recordar>Recordarme en este equipo</mod_login_check_recordar>
+	<mod_login_lbl_soporte>Si tiene alguna consulta llámenos al teléfono 56-2-9799153 o reporte cualquier problema con el sistema haciendo click aquí</mod_login_lbl_soporte>
+	<mod_login_vl_usuario>Ingrese un nombre de usuario válido</mod_login_vl_usuario>
+	<mod_login_vl_pass>Ingrese una contraseña válida</mod_login_vl_pass>
+	
+	<!-- Login -->
+	<login_login_ws_fault_title>Login</login_login_ws_fault_title>
+	<login_usuario_invalido>Usuario/Password Inválido</login_usuario_invalido>
+	<login_usuario_no_pertenece>El usuario no pertenece a esta aplicación</login_usuario_no_pertenece>
+	
+
+		
+</data>	

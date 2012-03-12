@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="602" height="456"
+	 title="{IdiomaApp.getText('mod_detalle_agenda_tit_info')}" showCloseButton="true" close="closePopUp()" preinitialize="initMod()">
+	 
+
+
+<mx:Script>
+    <![CDATA[
+    	import mx.controls.List;
+    	import mx.utils.ObjectUtil;
+        import mx.collections.ArrayCollection;
+        import mx.events.ListEvent;
+        import mx.controls.Alert;  
+        import flash.events.*; 
+        import mx.events.*;  
+        include "libModDetalleAgenda.as";
+			
+		
+      ]]>
+    </mx:Script>
+ <!-- Servicios -->
+	<mx:HTTPService id="serviceDetalle" method="POST" requestTimeout="500" showBusyCursor="true"/>
+	<mx:HTTPService id="serviceDetalleTaller" method="POST" requestTimeout="500" showBusyCursor="true"/>
+	<mx:AdvancedDataGrid id="myADG0" 
+	   width="560" height="340" 
+	    x="10" y="66" defaultLeafIcon="{null}" folderClosedIcon="{null}" folderOpenIcon="{null}">   
+<mx:dataProvider>
+                <mx:GroupingCollection id="gc">
+                    <mx:grouping>
+                        <mx:Grouping>
+                            <mx:GroupingField name="nomtaller"/>
+                        </mx:Grouping>
+                    </mx:grouping>
+                </mx:GroupingCollection>
+            </mx:dataProvider>        
+
+
+	   <mx:columns>
+	       <mx:AdvancedDataGridColumn id="taller" dataField="" headerText="{IdiomaApp.getText('mod_detalle_agenda_grid_taller')}"/>
+	       <mx:AdvancedDataGridColumn id="local" dataField="nomlocal" headerText="{IdiomaApp.getText('mod_detalle_agenda_grid_local')}"/>
+	       <mx:AdvancedDataGridColumn id="total" dataField="total" headerText="{IdiomaApp.getText('mod_detalle_agenda_grid_cant')}"/>
+	    </mx:columns>
+	</mx:AdvancedDataGrid>
+	<mx:Grid x="10" y="10" width="240" height="48">
+		<mx:GridRow width="100%" height="100%">
+			<mx:GridItem width="100%" height="100%">
+				<mx:Label text="{IdiomaApp.getText('general_fecha_entrega')}" fontWeight="bold" fontSize="10"/>
+			</mx:GridItem>
+			<mx:GridItem width="100%" height="100%">
+				<mx:Text id="lbfecha" fontWeight="bold" fontSize="10"/>
+			</mx:GridItem>
+		</mx:GridRow>
+		<mx:GridRow width="100%" height="100%">
+			<mx:GridItem width="100%" height="100%">
+				<mx:Label text="{IdiomaApp.getText('mod_detalle_agenda_ve_entregar')}" fontWeight="bold"/>
+			</mx:GridItem>
+			<mx:GridItem width="100%" height="100%">
+				<mx:Label id="lbtotal" fontWeight="bold"/>
+			</mx:GridItem>
+		</mx:GridRow>
+	</mx:Grid>
+</mx:TitleWindow>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml">
+	
+	<mx:Script>
+		<![CDATA[
+			import mx.collections.ArrayCollection;
+			import mx.controls.Alert;
+			
+			public var myItemRespon:Object;
+			public var myNomRespon:String;
+			
+			private function onChange(event:Event):void {
+				myNomRespon = ComboBox(event.currentTarget).selectedLabel;
+				myItemRespon = event.currentTarget.selectedItem;
+				data.itemRespon = myItemRespon;
+//				ArrayCollection(data.Respon).removeItemAt(event.currentTarget.selectedIndex);
+				trace(myItemRespon);
+				trace(cbResponsables.selectedItem);
+				trace(myItemRespon.Descripcion + " *** " + data.itemRespon.Descripcion);
+			}
+		]]>
+	</mx:Script>
+	
+	<mx:ComboBox id="cbResponsables" dataProvider="{data.Respon}" labelField="Descripcion" 
+		change="onChange(event);" prompt="Seleccione..."/>
+	
+</mx:HBox>

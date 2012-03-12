@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
+	width="408" height="354"
+	creationComplete="initCom()"
+	layout="absolute" cornerRadius="10">
+	
+	<mx:Script source="libComWait.as" />
+	
+	<mx:Text id="lblVehiculo" width="100%" x="10" y="28" fontStyle="italic" fontFamily="Arial" color="#545757" fontSize="18" fontWeight="bold"/>
+	<mx:SWFLoader id="container" x="146" y="152" width="172" height="126"/>	
+</mx:TitleWindow>

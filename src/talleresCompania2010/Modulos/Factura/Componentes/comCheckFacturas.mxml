@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="30" height="18" dataChange="asignarFalse()">
+	
+	<mx:Script source="libComCheckFacturas.as"/>
+	
+	<mx:CheckBox id="chkCambio" verticalCenter="0" horizontalCenter="0" change="asignarSeleccion()"/>
+</mx:Canvas>

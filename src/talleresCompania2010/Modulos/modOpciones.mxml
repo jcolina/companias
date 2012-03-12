@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="416" height="262"  title="{IdiomaApp.getText('mod_opciones_title')}"
+	backgroundColor="white" close="Application.application.closePopUp(this)" showCloseButton="true" initialize="initMod()">
+    
+    <mx:Script source="libModOpciones.as" />
+   
+    <mx:Grid width="376" height="206" paddingTop="10" y="10" x="10">
+    	<mx:GridRow width="100%">
+    		<mx:GridItem width="40%" height="100%">
+    			<mx:Label text="{IdiomaApp.getText('mod_opciones_calular')}" styleName="ingresarVeh" id="lblcelularn" fontWeight="normal" fontSize="10"/>
+    		</mx:GridItem>
+    		<mx:GridItem width="60%" height="100%">
+    			<mx:TextInput id="txtCelular" width="180" maxChars="15" name="{IdiomaApp.getText('mod_opciones_calular')}"  restrict="0-9" focusIn="sacarPuntosCelular()" focusOut="formatoCelular()"/>
+    		</mx:GridItem>
+    	</mx:GridRow>
+    	<mx:GridRow width="100%" >
+    		<mx:GridItem width="40%" height="100%">
+    			<mx:Label text="{IdiomaApp.getText('mod_opciones_email')}" styleName="ingresarVeh" id="lblemailn" fontWeight="normal" fontSize="10"/>
+    		</mx:GridItem>
+    		<mx:GridItem width="60%" height="100%">
+    			<mx:TextInput id="txtEmail" width="180" />
+    		</mx:GridItem>
+    	</mx:GridRow>
+    	<mx:GridRow width="100%" >
+    		<mx:GridItem width="40%" height="100%">
+    			<mx:Label text="{IdiomaApp.getText('mod_opciones_actual_contra')}" styleName="ingresarVeh" id="lblantiguapass" fontWeight="normal" fontSize="10"/>
+    		</mx:GridItem>
+    		<mx:GridItem width="60%" height="100%">
+    			<mx:TextInput id="txtActualPass" width="180" displayAsPassword="true"/>
+    		</mx:GridItem>
+    	</mx:GridRow>
+    	<mx:GridRow width="100%" >
+    		<mx:GridItem width="40%" height="100%">
+    			<mx:Label text="{IdiomaApp.getText('mod_opciones_nueva_contra')}" styleName="ingresarVeh" id="lblnewpassn" fontWeight="normal" fontSize="10"/>
+    		</mx:GridItem>
+    		<mx:GridItem width="60%" height="100%">
+    			<mx:TextInput id="txtNewPass" width="180" displayAsPassword="true"/>
+    		</mx:GridItem>
+    	</mx:GridRow>
+    	<mx:GridRow width="100%" >
+    		<mx:GridItem width="40%" height="100%">
+    			<mx:Label text="{IdiomaApp.getText('mod_opciones_reingre_contra')}" styleName="ingresarVeh" id="lblnewpassn0" fontWeight="normal" fontSize="10"/>
+    		</mx:GridItem>
+    		<mx:GridItem width="60%" height="100%">
+    			<mx:TextInput id="txtReNewPass" width="180" displayAsPassword="true"/>
+    		</mx:GridItem>
+    	</mx:GridRow>
+    	<mx:GridRow width="100%" height="50">
+    		<mx:GridItem width="40%" height="100%">
+    		</mx:GridItem>
+    		<mx:GridItem width="60%" height="100%" horizontalAlign="right" verticalAlign="middle" paddingRight="15">
+    			<mx:Button label="{IdiomaApp.getText('mod_opciones_actualizar')}" id="btnGuardar" click="actualizarDatos()"/>
+    		</mx:GridItem>
+    	</mx:GridRow>
+    </mx:Grid>
+
+    <mx:EmailValidator id="emailValidator" requiredFieldError="{IdiomaApp.getText('mod_opciones_val_complete')}" source="{txtEmail}"
+      property="text" invalidCharError="{IdiomaApp.getText('mod_opciones_val_caracter')}" invalidDomainError= "{IdiomaApp.getText('mod_opciones_val_dominio')}"
+      missingAtSignError="{IdiomaApp.getText('mod_opciones_val_necesita')}" missingPeriodInDomainError="{IdiomaApp.getText('mod_opciones_val_necesita_nom')}"/>    
+</mx:TitleWindow>

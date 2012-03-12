@@ -1,6 +1,6 @@
 <data>
 <!--URL Servicios-->
-<urlServer>http://192.168.1.161/dataServices/services/</urlServer>
+<urlServer>http://192.168.1.222/dataServices/services/</urlServer>
 <urlServerWsas>http://192.168.1.161/wsas/services/</urlServerWsas>
 
 <!--URL app-->
